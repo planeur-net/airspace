@@ -14,7 +14,7 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
   web-deploy:
-    name: 🎉 Copy file to www.planeur.net FTP
+    name: 🎉 Upload files to FTP
     runs-on: ubuntu-latest
     steps:
     - name: 🚚 Get latest code
@@ -28,4 +28,8 @@ jobs:
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: "./"
         server-dir: "/ludovic/airspace/"
-        dry-run: true
+        exclude: |
+          **/.git*
+          **/.git*/**
+          README.md
+        dry-run: false
