@@ -13,28 +13,19 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build:
+  web-deploy:
+    name: 🎉 Copy file to www.planeur.net FTP
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      # Here is the deployment action
-      # https://github.com/marketplace/actions/ftp-deployment
-      - name: Upload from git to ftp
-        uses: airvzxf/ftp-deployment-action@latest
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          user: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          local_dir: "./"
-          remote_dir: "/ludovic/airspace"
-          delete: "false"
-          max_retries: "7"
-          no_symlinks: "false"
-          ftp_ssl_allow: "false"
-          ftp_use_feat: "true"
-          ftp_nop_interval: "9"
-          net_max_retries: "0"
-          net_persist_retries: "11"
-          net_timeout: "13s"
-          dns_max_retries: "17"
-          dns_fatal_timeout: "never"
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: "./"
+        server-dir: "/ludovic/airspace"
+        dry-run: true
