@@ -22,11 +22,11 @@ jobs:
       - name: Upload from git to ftp
         uses: airvzxf/ftp-deployment-action@latest
         with:
-          server: "82.64.126.162:61140"
-          user: "freebox"
-          password: "Dummy123Password"
+          server: ${{ secrets.FTP_SERVER }}
+          user: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
           local_dir: "./"
-          remote_dir: "/Freebox/ludovic"
+          remote_dir: "/ludovic/airspace"
           delete: "false"
           max_retries: "7"
           no_symlinks: "false"
