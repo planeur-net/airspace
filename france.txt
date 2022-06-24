@@ -3,7 +3,7 @@
 *                               AIRSPACE OF FRANCE                             *
 *                         OPTIMIZED FOR GLIDER ACTIVITY                        *
 *                                                                              *
-*                        SOURCE: AIP FRANCE 2022/06/16                         *
+*                        SOURCE: AIP FRANCE 2022/06/16                  *
 *                     https://www.sia.aviation-civile.gouv.fr                  *
 *                                                                              *
 *                 >>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<                 *
@@ -19,11 +19,11 @@
 *           This file is provided free of charge with no warrantees,           *
 *             expressed or implied. USER ASSUMES ALL RISK OF USE.              *
 *                                                                              *
-*               Courtesy of French Gliding Association :                       *
-*           https://www.ffvp.fr/liens-utiles-telechargements                   *
-*                                                                              *       
+*               Courtesy of French Gliding Association :               *
+*           https://www.ffvp.fr/liens-utiles-telechargements            *
+*                                                             *       
 *                       contact : commission.espaceaerien@ffvp.fr              *
-*                                                                              *
+*                                                                   *
 ********************************************************************************
 
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
@@ -39,6 +39,7 @@
 **** Mod Parc GRAND PARADIS *****
 **** Mod ZIT Sarlat ****
 **** Mod R30 Mont-Blanc ****
+**** Creation Zones Tir Polset Vanoise ****
 
 *********************************
 *   ZONE REGLEMENTE TEMPORAIRE  *
@@ -23134,7 +23135,7 @@ DB 44:44:31 N 005:26:51 E,44:44:50 N 005:27:52 E
 AC GP
 AN Grand Paradis 
 AL GND
-AH 4500FT AMSL
+AH 4500M AMSL
 DP 45:41:00 N 007:11:30 E
 DP 45:37:34 N 007:22:03 E
 DP 45:35:33 N 007:34:48 E
@@ -25595,3 +25596,38 @@ DB 50:43:22 N 002:36:28 E,50:49:57 N 002:14:15 E
 V D=-
 V X=51:05:25 N 002:39:10 E
 DB 50:52:43 N 002:17:28 E,50:46:45 N 002:37:53 E  
+
+
+** ZRT Polset Alpha (2 Juin 2022) **
+**13e Bataillon de chasseurs Alpins**
+**Cellule tir 13ème BCA : 04.79.71.22.21**
+**Permanence 13ème BCA : 04.79.71.22.59**
+AC R
+AN ZRT Polset Alpha H24
+AH 8500FT AMSL
+AL GND
+DP 45:14:03 N 006:38:37 E
+DP 45:14:04 N 006:38:01 E
+DP 45:14:25 N 006:37:07 E
+DP 45:14:46 N 006:37:24 E
+DP 45:15:09 N 006:38:16 E
+DP 45:14:41 N 006:38:43 E
+DP 45:14:03 N 006:38:37 E
+
+** ZRT Polset Bravo (2 Juin 2022) **
+**13e Bataillon de chasseurs Alpins**
+**Cellule tir 13ème BCA : 04.79.71.22.21**
+**Permanence 13ème BCA : 04.79.71.22.59**
+AC R
+AN ZRT Polset Bravo(Notam)
+AH FL160
+AL GND
+DP 45:12:53 N 006:38:43 E
+DP 45:14:04 N 006:38:01 E
+DP 45:14:25 N 006:37:07 E
+DP 45:14:46 N 006:37:24 E
+DP 45:15:09 N 006:38:16 E
+DP 45:14:41 N 006:38:43 E
+DP 45:14:03 N 006:38:37 E
+DP 45:12:54 N 006:38:48 E
+DP 45:12:53 N 006:38:43 E
