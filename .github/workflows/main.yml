@@ -1,0 +1,40 @@
+# Copy file to plameur.net FTP server
+
+name: Copy_Airspace_to_FTP
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: ["feature/publish_to_ftp"]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      # Here is the deployment action
+      # https://github.com/marketplace/actions/ftp-deployment
+      - name: Upload from git to ftp
+        uses: airvzxf/ftp-deployment-action@latest
+        with:
+          server: "82.64.126.162:61140"
+          user: "freebox"
+          password: "Dummy123Password"
+          local_dir: "./"
+          remote_dir: "/Freebox/ludovic"
+          delete: "false"
+          max_retries: "7"
+          no_symlinks: "false"
+          ftp_ssl_allow: "true"
+          ftp_use_feat: "true"
+          ftp_nop_interval: "9"
+          net_max_retries: "0"
+          net_persist_retries: "11"
+          net_timeout: "13s"
+          dns_max_retries: "17"
+          dns_fatal_timeout: "never"
