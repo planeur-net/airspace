@@ -27,5 +27,5 @@ jobs:
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         local-dir: "./"
-        server-dir: "/ludovic/airspace"
+        server-dir: "/ludovic/airspace/"
         dry-run: true
