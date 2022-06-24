@@ -3,7 +3,7 @@
 *                               AIRSPACE OF FRANCE                             *
 *                         OPTIMIZED FOR GLIDER ACTIVITY                        *
 *                                                                              *
-*                        SOURCE: AIP FRANCE 2022/06/16                  *
+*                        SOURCE: AIP FRANCE 2022/06/16                         *
 *                     https://www.sia.aviation-civile.gouv.fr                  *
 *                                                                              *
 *                 >>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<                 *
@@ -19,11 +19,11 @@
 *           This file is provided free of charge with no warrantees,           *
 *             expressed or implied. USER ASSUMES ALL RISK OF USE.              *
 *                                                                              *
-*               Courtesy of French Gliding Association :               *
-*           https://www.ffvp.fr/liens-utiles-telechargements            *
-*                                                             *       
+*               Courtesy of French Gliding Association :                       *
+*           https://www.ffvp.fr/liens-utiles-telechargements                   *
+*                                                                              *       
 *                       contact : commission.espaceaerien@ffvp.fr              *
-*                                                                   *
+*                                                                              *
 ********************************************************************************
 
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
@@ -46,7 +46,7 @@
 *     SUP AIP France            *
 *********************************
 *********************************
-*   ZONE INTERDITE TEMPORAIRE     *
+*   ZONE INTERDITE TEMPORAIRE   *
 *     SUP AIP France            *
 *********************************
 
