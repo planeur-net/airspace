@@ -36,7 +36,7 @@
 **** - VV ST DIE ****
 **** - VV HAGUENAU EST+OUEST **** 
 
-**** Mod Parc GRAND PARADIS *****
+**** Mod Parc GRAND PARADIS 4500 M *****
 **** Mod ZIT Sarlat ****
 **** Mod R30 Mont-Blanc ****
 **** Creation Zones Tir Polset Vanoise ****
