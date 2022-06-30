@@ -30,7 +30,7 @@
 
 **** + ZRT ALPILLES WHISKY+ECHO ****
 **** + ZSM GLANDASSE ****
-**** + ZONE DE SENSIBILITE MAXIMALE (ZSM Alpes Gypaete Barbu (01/01/2022)**https://zsm-gypaete-barbu.lpo.fr/**
+**** + ZONE DE SENSIBILITE MAXIMALE (ZSM Alpes Gypaete Barbu (01/01/2022)****
 
 
 **** - R 111 ERSTEIN ****
@@ -25573,8 +25573,7 @@ DP 45:14:03 N 006:38:37 E
 DP 45:12:54 N 006:38:48 E
 DP 45:12:53 N 006:38:43 E
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Fouillouse) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Fouillouse) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25625,8 +25624,7 @@ DP 44:30:54 N 006:51:09 E
 
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Les Bans) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Les Bans) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25688,8 +25686,7 @@ DP 45:02:01 N 006:13:01 E
 
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Rateaux Vieux) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Rateaux Vieux) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25721,8 +25718,7 @@ DP 45:06:47 N 006:28:48 E
 DP 45:06:27 N 006:28:47 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Bramans) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Bramans) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25740,8 +25736,7 @@ DP 45:11:57 N 006:50:21 E
 DP 45:11:17 N 006:50:41 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Termignon) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Termignon) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25776,8 +25771,7 @@ DP 45:19:02 N 006:48:10 E
 DP 45:19:06 N 006:47:49 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Vallon 1) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Vallon 1) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25810,8 +25804,7 @@ DP 45:21:02 N 007:00:39 E
 DP 45:20:53 N 007:00:29 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Balme Noire) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Balme Noire) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25830,8 +25823,7 @@ DP 45:24:07 N 006:44:27 E
 DP 45:23:45 N 006:45:03 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Gorges de la Daille) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Gorges de la Daille) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25862,8 +25854,7 @@ DP 45:28:02 N 006:57:57 E
 DP 45:27:59 N 006:57:59 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Peysey 2) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Peysey 2) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -25937,8 +25928,7 @@ DP 45:31:32 N 006:48:41 E
 
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Charbonnet) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Charbonnet) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -26048,8 +26038,7 @@ DP 45:38:47 N 006:44:49 E
 DP 45:38:41 N 006:44:49 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Bourg 3) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Bourg 3) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -26163,8 +26152,7 @@ DP 45:40:49 N 006:43:39 E
 DP 45:40:51 N 006:43:38 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Bargy Sud) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Bargy Sud) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -26204,8 +26192,7 @@ DP 46:00:59 N 006:30:41 E
 DP 46:00:53 N 006:30:38 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM La Vuarde) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM La Vuarde) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -26250,8 +26237,7 @@ DP 46:01:09 N 006:35:26 E
 DP 46:01:07 N 006:35:31 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Sixt Fer a cheval 1) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Sixt Fer a cheval 1) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
@@ -26278,8 +26264,7 @@ DP 46:00:16 N 006:46:27 E
 DP 46:00:26 N 006:46:30 E
 
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Sixt Fer a cheval 2) Gypaete Barbu (01/01/2022) **
-**https://zsm-gypaete-barbu.lpo.fr/**
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Sixt Fer a cheval 2) Gypaete Barbu (01.01.2022) **
 ** Jean-Marc SAVOIE 12.04.2022 **
 ** Site ZSM Gypaete **
 AC P
