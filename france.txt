@@ -15454,10 +15454,10 @@ AL GND
 DP 45:02:58 N 006:06:04 E
 DP 45:02:58 N 006:25:45 E
 DP 45:02:06 N 006:25:45 E
-** Parc national des �crins **
+** Parc national des ecrins **
 DP 45:01:20 N 006:25:16 E
 DP 45:01:20 N 006:21:07 E 
-** Parc national des �crins **
+** Parc national des ecrins **
 DP 45:01:20 N 006:17:52 E 
 DP 45:01:20 N 006:06:04 E
 DP 45:02:58 N 006:06:04 E
@@ -17573,7 +17573,7 @@ DC 1
 
 ** LF-R 3200A Tour du Pin (22/02/2017) **
 AC R
-AN VV R3200A Tour Du Pin autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3200A Tour Du Pin autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH 4500FT MSL
 AL 2500FT MSL
 DP 45:37:25 N 005:23:53 E
@@ -17587,7 +17587,7 @@ DP 45:37:25 N 005:23:53 E
 
 ** LF-R 3200B Tour du Pin (22/02/2017) **
 AC R
-AN VV R3200B Tour du Pin autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3200B Tour du Pin autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH 4500FT MSL
 AL 3500FT MSL
 DP 45:33:11 N 005:25:11 E
@@ -17602,7 +17602,7 @@ DP 45:33:11 N 005:25:11 E
 
 ** LF-R 3201A Villefranche (22/02/2017) **
 AC R
-AN VV R3201A Villefranche autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3201A Villefranche autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH 4500FT MSL
 AL 2500FT MSL
 DP 45:58:12 N 004:44:12 E
@@ -17621,7 +17621,7 @@ DP 45:58:12 N 004:44:12 E
 
 ** LF-R 3201B Villefranche (22/02/2017) **
 AC R
-AN VV R3201B Villefranche autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3201B Villefranche autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH FL065
 AL 4500FT MSL
 DP 46:07:25 N 004:45:45 E
@@ -17643,7 +17643,7 @@ DP 46:07:25 N 004:45:45 E
 
 ** R3202 :L:Arbresle: (25/05/2017) **
 AC R
-AN R3202 VV L:Arbresle autoris�e selon protocole (Veille radio 129.975 ATIS 118.375)
+AN R3202 VV L:Arbresle autorise selon protocole (Veille radio 129.975 ATIS 118.375)
 AH FL065
 AL 4500FT MSL
 DP 45:53:58 N 004:33:08 E 
@@ -17656,7 +17656,7 @@ DP 45:52:42 N 004:32:14 E
 
 ** LF-R 3203 Beaujolais (22/02/2017) **
 AC R
-AN VV R3203 Beaujolais autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3203 Beaujolais autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH FL070
 AL FL065
 DP 46:08:44 N 004:26:03 E
@@ -17667,7 +17667,7 @@ DP 46:08:44 N 004:26:03 E
 
 ** LF-R 3204A Pilat Onde (22/02/2017) **
 AC R
-AN VV R3204A Pilat Onde autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3204A Pilat Onde autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH FL065
 AL 4500FT MSL
 DP 45:36:21 N 004:44:27 E
@@ -17678,7 +17678,7 @@ DP 45:36:21 N 004:44:27 E
 
 ** LF-R 3204B Pilat Onde (22/02/2017) **
 AC R
-AN VV R3204B Pilat Onde autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3204B Pilat Onde autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH FL100
 AL FL065
 DP 45:34:52 N 004:39:07 E
@@ -17689,7 +17689,7 @@ DP 45:34:52 N 004:39:07 E
 
 ** LF-R 3205A Nord-Est (22/02/2017) **
 AC R
-AN VV R3205A Nord-Est autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3205A Nord-Est autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH FL065
 AL 4500FT MSL
 DP 46:09:20 N 005:19:30 E
@@ -17703,7 +17703,7 @@ DP 46:09:20 N 005:19:30 E
 
 ** LF-R 3205B Sud-Est (22/02/2017) **
 AC R
-AN VV R3205B Sud-Est autoris�e selon protocole (ATIS 118.375) / TMA Lyon classe C
+AN VV R3205B Sud-Est autorise selon protocole (ATIS 118.375) / TMA Lyon classe C
 AH FL065
 AL 4500FT MSL
 DP 45:41:16 N 005:29:51 E
@@ -18574,7 +18574,7 @@ DP 45:00:01 N 006:16:30 E
 DP 45:00:17 N 006:16:29 E
 
 AC W
-AN Ecrins Entr�e Agneaux
+AN Ecrins Entre Agneaux
 AH FL195
 AL 2800M MSL
 DP 44:57:34 N 006:23:56 E
@@ -22034,7 +22034,7 @@ DP 44:18:30 N 006:51:27 E
 DP 44:18:30 N 006:51:13 E
 DP 44:18:34 N 006:51:15 E
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Sources de la Tin�e) Gypaete Barbu (22/11/2018) **
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Sources de la Tine) Gypaete Barbu (22/11/2018) **
 ** Jean-Marc SAVOIE 12.03.2019 **
 ** Lettre Parc Mercantour du 22/11/2018 **
 AC P
@@ -22048,7 +22048,7 @@ DP 44:12:49 N 006:51:55 E
 DP 44:12:20 N 006:51:55 E
 DP 44:12:55 N 006:49:22 E
 
-** ZONE DE SENSIBILITE MAXIMALE (ZSM Sources de la Tin�e) Gypaete Barbu (22/11/2018) **
+** ZONE DE SENSIBILITE MAXIMALE (ZSM Sources de la Tine) Gypaete Barbu (22/11/2018) **
 ** Jean-Marc SAVOIE 12.03.2019 **
 ** Lettre Parc Mercantour du 22/11/2018 **
 AC P
@@ -22245,7 +22245,7 @@ DP 44:11:51 N 006:47:51 E
 *******Derogations********
 **************************
 
-** Vanoise d�rogation (Parc National) **
+** Vanoise derogation (Parc National) **
 *Jean-Marc SAVOIE 16.02.2016*
 AC W
 AN Vanoise P1 Grand Roc noir du 15/05 au 30/10
@@ -22270,7 +22270,7 @@ DP 45:18:16 N 006:51:09 E
 DP 45:18:33 N 006:51:43 E
 DP 45:18:50 N 006:52:01 E
 
-** Vanoise d�rogation (Parc National) **
+** Vanoise derogation (Parc National) **
 *Jean-Marc SAVOIE 16.02.2016*
 AC W
 AN Vanoise P2 Aussois du 15/05 au 30/10
