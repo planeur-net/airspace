@@ -9303,6 +9303,7 @@ AL FL115
 DP 44:30:00 N 000:34:47 E
 DP 44:30:00 N 001:02:13 E
 DP 44:20:46 N 001:01:32 E
+DP 44:30:00 N 000:34:47 E
 
 AC E
 AN Toulouse4.5
@@ -9311,6 +9312,7 @@ AL 3500FT MSL
 DP 44:30:00 N 000:34:47 E
 DP 44:30:00 N 001:02:13 E
 DP 44:20:46 N 001:01:32 E
+DP 44:30:00 N 000:34:47 E
 
 ** TMA TOULOUSE Partie 4.6 (18 oct 2012) **
 AC E
@@ -12598,7 +12600,7 @@ DP 43:33:44 N 005:20:11 E
 DP 43:33:50 N 005:19:30 E
 DP 43:53:21 N 005:12:39 E
 
-** R 71 A SALON (Couloir v�livole EST / Gliding Corridor East)
+** R 71 A SALON (Couloir vlivole EST / Gliding Corridor East)
 ** Letter of Agreement with SALON Air Base **
 ** not to be used without prior briefing and authorisation **
 AC W
