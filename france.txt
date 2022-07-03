@@ -3291,7 +3291,7 @@ DP 43:15:26 N 001:36:41 W
 
 ** TMA CHAMBERY Partie 1 (2021/04/22) **
 AC E
-AN TMA CHAMBERY 1 CHAMBERY INFO 123.7 CLASSE E de mi-avril � mi-d�cembre et du lundi 11h UTC au jeudi soir
+AN TMA CHAMBERY 1 CHAMBERY INFO 123.7 CLASSE E de mi-avril  mi-decembre et du lundi 11h UTC au jeudi soir
 AH FL095
 AL 3000FT MSL
 DP 46:02:56 N 006:09:33 E
