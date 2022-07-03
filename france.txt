@@ -3313,7 +3313,7 @@ DP 46:02:56 N 006:09:33 E
 
 ** TMA CHAMBERY Partie 2 (2020/12/03) **
 AC E
-AN TMA CHAMBERY 2 CHAMBERY INFO 123.7 CLASSE E de mi-avril � mi-d�cembre et du lundi 11h UTC au jeudi soir
+AN TMA CHAMBERY 2 CHAMBERY INFO 123.7 CLASSE E de mi-avril  mi-decembre et du lundi 11h UTC au jeudi soir
 AH FL95
 AL 5500FT MSL
 DP 45:58:31 N 005:36:01 E
