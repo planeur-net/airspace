@@ -1,2 +1,2 @@
 # airspace
-La FFVP met à jour un fichier des espaces aériens au format « openair », compatible avec SeeYou et la plupart des GPS utilisés par les vélivoles. Ce fichier est compilé bénévolement à partir des publications AIP du Service de l’Information Aéronautique.
+La FFVP met à jour un fichier des espaces aériens au format [OpenAir](http://www.winpilot.com/UsersGuide/UserAirspace.asp), compatible avec SeeYou et la plupart des GPS utilisés par les vélivoles. Ce fichier est compilé bénévolement à partir des publications [AIP](https://www.sia.aviation-civile.gouv.fr/documents/supaip/aip/id/6) du Service de l’Information Aéronautique.
