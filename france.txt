@@ -29,6 +29,7 @@
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
 
 **** + ZRT ALPILLES WHISKY+ECHO ****
+**** + ZRT POLSET Vanoise ****
 **** + ZSM GLANDASSE ****
 
 **** - R 111 ERSTEIN ****
@@ -38,12 +39,44 @@
 **** Mod Parc GRAND PARADIS 4500 M *****
 **** Mod ZIT Sarlat ****
 **** Mod R30 Mont-Blanc ****
-**** Creation Zones Tir Polset Vanoise ****
 
 *********************************
 *   ZONE REGLEMENTE TEMPORAIRE  *
 *     SUP AIP France            *
 *********************************
+
+** ZRT POLSET A par NOTAM (22022/06/02) **
+**Cellule tir 13ème BCA : 04.79.71.22.21**
+**Permanence 13ème BCA : 04.79.71.22.59**
+AC R
+AN ZRT Polset A H24 par NOTAM
+AH 8500FT AMSL
+AL GND
+DP 45:14:03 N 006:38:37 E
+DP 45:14:04 N 006:38:01 E
+DP 45:14:25 N 006:37:07 E
+DP 45:14:46 N 006:37:24 E
+DP 45:15:09 N 006:38:16 E
+DP 45:14:41 N 006:38:43 E
+DP 45:14:03 N 006:38:37 E
+
+** ZRT POLSET B par NOTAM (2022/06/02) **
+**Cellule tir 13ème BCA : 04.79.71.22.21**
+**Permanence 13ème BCA : 04.79.71.22.59**
+AC R
+AN ZRT Polset B par NOTAM
+AH FL160
+AL GND
+DP 45:12:53 N 006:38:43 E
+DP 45:14:04 N 006:38:01 E
+DP 45:14:25 N 006:37:07 E
+DP 45:14:46 N 006:37:24 E
+DP 45:15:09 N 006:38:16 E
+DP 45:14:41 N 006:38:43 E
+DP 45:14:03 N 006:38:37 E
+DP 45:12:54 N 006:38:48 E
+DP 45:12:53 N 006:38:43 E
+
 *********************************
 *   ZONE INTERDITE TEMPORAIRE   *
 *     SUP AIP France            *
