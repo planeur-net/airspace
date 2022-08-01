@@ -92,4 +92,9 @@ jobs:
         npm install @openaip/openair-parser
         cd ..
         node ./openaip-openair-parser/cli.js -f ./france.txt -o france.geojson
-        
+    
+    - name: publish artifact
+      uses: actions/upload-artifact@v2
+      with:
+        path: ${{ github.workspace }}
+        name: ${{ env.VERSION_MAJOR }}.${{ env.VERSION_MINOR }}
