@@ -90,5 +90,6 @@ jobs:
         cd openaip-openair-parser
         git clone https://github.com/openAIP/openaip-openair-parser.git
         npm install -g @openaip/openair-parser
-        node ./cli.js -f ../france.txt -o ../france.geojson
+        ls
+        node cli.js -f ../france.txt -o ../france.geojson
     
