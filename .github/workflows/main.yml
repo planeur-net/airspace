@@ -6,7 +6,7 @@ name: Copy_Airspace_to_FTP
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: ["main"]
+    branches: ["feature/geojson_converter"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -71,4 +71,24 @@ jobs:
         fi
         
 
+  convert-to-geojson:
+    name: Convert france.txt to .geojson
+    runs-on: ubuntu-latest
+    steps:
+    - name: Install Node
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16
 
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v2
+
+    - name: ⚙️ Convert to .geojson and push to repo
+      run: |
+        echo "Install openaip-openair-parser"
+        mkdir openaip-openair-parser
+        cd openaip-openair-parser
+        git clone https://github.com/openAIP/openaip-openair-parser.git
+        cd ..
+        npm ./openaip-openair-parser/cli.js -f ./france.txt -o france.geojson
+        
