@@ -86,10 +86,7 @@ jobs:
     - name:  Convert to .geojson and push to repo
       run: |
         echo "Install openaip-openair-parser"
-        mkdir openaip-openair-parser
-        cd openaip-openair-parser
         git clone https://github.com/openAIP/openaip-openair-parser.git
         npm install -g @openaip/openair-parser
-        ls
-        node cli.js -f ../france.txt -o ../france.geojson
+        node ./openaip-openair-parser/cli.js -f ./france.txt -o ./france.geojson
     
