@@ -89,6 +89,7 @@ jobs:
         mkdir openaip-openair-parser
         cd openaip-openair-parser
         git clone https://github.com/openAIP/openaip-openair-parser.git
+        npm install @openaip/openair-parser
         cd ..
         node ./openaip-openair-parser/cli.js -f ./france.txt -o france.geojson
         
