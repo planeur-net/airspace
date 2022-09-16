@@ -6,7 +6,7 @@ name: Validate, Convert, Push to FTP
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: ["feature/validate-airspace-file"]
+    branches: ["main"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -17,17 +17,23 @@ jobs:
   validate-airspace:
     name: Validate OpenAir france.txt
     runs-on: ubuntu-latest
+    outputs:
+      validation-output: ${{ steps.validation.outputs.parser-output }}
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
 
-    - name:  Convert to .geojson and push to repo
+    - id: validation
+      name:  Validate france.txt
       run: |
-        echo "Install openaip-openair-parser"
+        echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
         cd openaip-openair-parser
         npm install
-        node ./cli.js -f ../france.txt -V -o ../france.geojson
+        echo "## Validating ..."
+        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt -V -o ../france.geojson)
+        SCRIPT_RC=$?
+        echo "::set-output name=parser-output::$SCRIPT_OUTPUT"
 
   web-deploy:
     name: 🎉 Upload files to FTP
@@ -35,7 +41,7 @@ jobs:
     needs: [validate-airspace]
     if: |
       always() &&
-      contains(needs.*.result, 'Successfully parsed')
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
@@ -63,7 +69,7 @@ jobs:
     needs: [validate-airspace]
     if: |
       always() &&
-      contains(needs.*.result, 'Successfully parsed')
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v2
