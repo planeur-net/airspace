@@ -52,7 +52,7 @@ jobs:
     steps:
       - name: Debug output
         run: |
-          echo "${{ toJson(needs.determine-condition) }}"
+          echo "${{ toJson(needs.validate-airspace.outputs.validation-output) }}"
 
   web-deploy:
     name: 🎉 Upload files to FTP
