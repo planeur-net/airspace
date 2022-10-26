@@ -47,14 +47,6 @@ jobs:
     outputs:
       validation-output: ${{ steps.validation.outputs.parser_output }}
 
-  debug:
-    needs: validate-airspace
-    runs-on: ubuntu-latest
-    steps:
-      - name: Debug output
-        run: |
-          echo "${{ toJson(needs.validate-airspace.outputs.validation-output) }}"
-
   web-deploy:
     name: 🎉 Upload files to FTP
     runs-on: ubuntu-latest
