@@ -10,6 +10,11 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      pushToFTP:
+          description: 'True if the action is triggered manually'
+          required: true
+          default: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # see: https://github.com/marketplace/actions/ftp-deployment
@@ -21,10 +26,10 @@ jobs:
       validation-output: ${{ steps.validation.outputs.parser-output }}
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - id: validation
-      name:  Validate france.txt
+      name:  Validate france.txt + generate .geojson
       run: |
         echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
@@ -41,10 +46,12 @@ jobs:
     needs: [validate-airspace]
     if: |
       always() &&
-      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed') &&
+      github.event.inputs.pushToFTP == true
+
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.3.0
@@ -72,7 +79,7 @@ jobs:
       contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
     steps:
     - name: 🚚 Get latest code
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
 
     - name: ⚙️ Convert to .cub and push to repo
       run: |
