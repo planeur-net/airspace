@@ -10,11 +10,6 @@ on:
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
-    inputs:
-      pushToFTP:
-          description: 'pushToFTP=true if the action is triggered manually'
-          required: true
-          default: true
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # see: https://github.com/marketplace/actions/ftp-deployment
@@ -56,8 +51,7 @@ jobs:
     needs: [validate-airspace]
     if: |
       always() &&
-      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed') &&
-      github.event.inputs.pushToFTP == true
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
 
     steps:
     - name: 🚚 Get latest code
