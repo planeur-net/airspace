@@ -45,8 +45,8 @@ jobs:
         git add ./france.geojson
 
     outputs:
-      validation-output: ${{ steps.validation.outputs.parser-output }}
-      
+      validation-output: ${{ steps.validation.outputs.parser_output }}
+
   debug:
     needs: validate-airspace
     runs-on: ubuntu-latest
