@@ -43,10 +43,12 @@ jobs:
     - name: ⚙️ Push .geojson to repo
       run: |
         # push to repo
-        cd ..
         echo "Pushing .geojson to repo"
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+        echo "#############DEBUG"
+        ls
 
         git add ./france.geojson
         
