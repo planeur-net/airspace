@@ -6,7 +6,7 @@ name: Validate, Convert, Push to FTP
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: ["main"]
+    branches: ["feature/test"]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -36,8 +36,7 @@ jobs:
         cd openaip-openair-parser
         npm install
         echo "## Validating ..."
-        echo "#############DEBUG"
-        ls
+        rm ../france.geojson
         SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt -V -o ../france.geojson)
         SCRIPT_RC=$?
         echo "::set-output name=parser-output::$SCRIPT_OUTPUT"
@@ -49,22 +48,7 @@ jobs:
         git config --global user.name "github-actions[bot]"
         git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-        echo "#############DEBUG"
-        ls
         git add ./france.geojson
-        
-        #        set +e  # Grep succeeds with nonzero exit codes to show results.
-        #        git status | grep modified
-        #        if [ $? -eq 0 ]
-        #        then
-        set -e
-        git commit -m "Auto generated file"
-        git pull
-        git push
-        #        else
-        #            set -e
-        #            echo "No changes since last run"
-        #        fi
 
   web-deploy:
     name: 🎉 Upload files to FTP
