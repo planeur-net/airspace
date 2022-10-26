@@ -17,6 +17,8 @@ jobs:
   validate-airspace:
     name: Validate OpenAir france.txt
     runs-on: ubuntu-latest
+    outputs:
+      validation-output: ${{ steps.validation.outputs.parser-output }}
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
@@ -33,7 +35,7 @@ jobs:
         SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt -V -o ../france.geojson)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT"
-        echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_ENV
+        echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
     - name: ⚙️ Push .geojson to repo
       run: |
@@ -44,13 +46,21 @@ jobs:
 
         git add ./france.geojson
 
+  debug:
+    needs: validate-airspace
+    runs-on: ubuntu-latest
+    steps:
+      - name: Debug output
+        run: |
+          echo "${{ toJson(needs.determine-condition) }}"
+
   web-deploy:
     name: 🎉 Upload files to FTP
     runs-on: ubuntu-latest
     needs: [validate-airspace]
     if: |
       always() &&
-      contains(env.parser_output, 'Successfully parsed')
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
 
     steps:
     - name: 🚚 Get latest code
