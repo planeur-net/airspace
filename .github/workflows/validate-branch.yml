@@ -14,6 +14,10 @@ on:
         required: true
         default: 'warning'
 
+  pull_request:
+    branches:
+      - master
+
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # see: https://github.com/marketplace/actions/ftp-deployment
 jobs:
