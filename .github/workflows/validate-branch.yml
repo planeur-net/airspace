@@ -38,7 +38,7 @@ jobs:
         cd openaip-openair-parser
         npm install
         echo "## Validating ..."
-        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt -V)
+        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt -V -o delete_me.geojson)
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
     outputs:
