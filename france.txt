@@ -27746,36 +27746,3 @@ DB 50:52:43 N 002:17:28 E,50:46:45 N 002:37:53 E
 DP 50:46:45 N 002:37:53 E
 DP 50:43:22 N 002:36:28 E
 
-** ZRT Polset Alpha (2 Juin 2022) **
-**13e Bataillon de chasseurs Alpins**
-**Cellule tir 13ème BCA : 04.79.71.22.21**
-**Permanence 13ème BCA : 04.79.71.22.59**
-AC R
-AN ZRT Polset Alpha H24
-AH 8500FT AMSL
-AL GND
-DP 45:14:03 N 006:38:37 E
-DP 45:14:04 N 006:38:01 E
-DP 45:14:25 N 006:37:07 E
-DP 45:14:46 N 006:37:24 E
-DP 45:15:09 N 006:38:16 E
-DP 45:14:41 N 006:38:43 E
-DP 45:14:03 N 006:38:37 E
-
-** ZRT Polset Bravo (2 Juin 2022) **
-**13e Bataillon de chasseurs Alpins**
-**Cellule tir 13ème BCA : 04.79.71.22.21**
-**Permanence 13ème BCA : 04.79.71.22.59**
-AC R
-AN ZRT Polset Bravo(Notam)
-AH FL160
-AL GND
-DP 45:12:53 N 006:38:43 E
-DP 45:14:04 N 006:38:01 E
-DP 45:14:25 N 006:37:07 E
-DP 45:14:46 N 006:37:24 E
-DP 45:15:09 N 006:38:16 E
-DP 45:14:41 N 006:38:43 E
-DP 45:14:03 N 006:38:37 E
-DP 45:12:54 N 006:38:48 E
-DP 45:12:53 N 006:38:43 E
