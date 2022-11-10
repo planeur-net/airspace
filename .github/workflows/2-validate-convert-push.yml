@@ -1,12 +1,12 @@
 # Copy file to planeur.net FTP server
 
-name: Validate, Convert, Push to FTP
+name: 2 - Validate, Convert, Push to FTP
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow After the version has been added
   workflow_run:
-    workflows: ["Add version to france.txt"]
+    workflows: ["1 - Add version to france.txt"]
     types:
       - completed
 
