@@ -27,7 +27,7 @@ jobs:
         run: |
           # Get information
           git log --pretty="%h %cI" -n1 -- france.txt
-          versionInfo=$(git log --pretty="%h %ci" -n1 -- france.txt)
+          versionInfo=$(git log --pretty="%h %cI" -n1 -- france.txt)
           # Remove first line if applicable
           sed -i "$((grep -nm1 *version= ./france.txt || echo 1000000000:) | cut -f 1 -d:) d" ./france.txt
           # Add version information
