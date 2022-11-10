@@ -37,15 +37,6 @@ jobs:
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
-    # - name: ⚙️ Push .geojson to repo
-    #   run: |
-    #     # push to repo
-    #     echo "Pushing .geojson to repo"
-    #     git config --global user.name "github-actions[bot]"
-    #     git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-    #     git add ./france.geojson
-    # Push changes to repo    
     - name: ⚙️ Push .geojson to repo
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
@@ -101,25 +92,10 @@ jobs:
         chmod +x ./bin/openair2cub
         ./bin/openair2cub france.txt
 
-        # push to repo
-        echo "Pushing .cub to repo"
-        git config --global user.name "github-actions[bot]"
-        git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
-        git add france.cub
-        
-        set +e  # Grep succeeds with nonzero exit codes to show results.
-        git status | grep modified
-        if [ $? -eq 0 ]
-        then
-            set -e
-            git commit -m "Auto generated file"
-            git pull
-            git push
-        else
-            set -e
-            echo "No changes since last run"
-        fi
-        
+    - name: ⚙️ Push .cub to repo
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        commit_message: Automated Change
+        file_pattern: 'france.cub'
 
 
