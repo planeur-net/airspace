@@ -33,7 +33,7 @@ jobs:
         npm install
         echo "## Validating ..."
         rm ../france.geojson
-        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt -V -o ../france.geojson)
+        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -o ../france.geojson)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
