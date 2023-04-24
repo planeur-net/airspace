@@ -4246,7 +4246,7 @@ DP 46:34:34 N 006:06:39 E
 
 ** TMA GENEVE partie 4.1 Saint-Claude Nord (22/02/2017) **
 AC C
-AN TMA GENEVE partie 4.1 ST CLAUDE NORD Autorisation GENEVE DELTA 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
+AN TMA GENEVE partie 4.1 ST CLAUDE NORD Autorisation Geneva Alps Radar 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
 AH FL 085
 AL FL 075
 AF 119.175
@@ -4347,7 +4347,7 @@ DP 45:48:23 N 006:05:48 E
 
 ** LS-T81 Secteur velivole Le Brassus gere par Geneve (22/02/2017) **
 AC W
-AN LS-T81 Le Brassus FL85-2600m Autorisation GENEVE DELTA 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
+AN LS-T81 Le Brassus FL85-2600m Autorisation Geneva Alps Radar 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
 AH FL 85
 AL FL 75
 AF 119.175
@@ -4364,7 +4364,7 @@ DP 46:32:42 N 006:09:18 E
 DP 46:34:34 N 006:06:39 E
 
 AC C
-AN LS-T81 Le Brassus au dessus de FL85-2600m Autorisation et Veille GENEVE DELTA 119.175
+AN LS-T81 Le Brassus au dessus de FL85-2600m Autorisation et Veille Geneva Alps Radar 119.175
 AH FL 145
 AL FL 85
 AF 119.175
@@ -4382,7 +4382,7 @@ DP 46:34:34 N 006:06:39 E
 
 ** LS-T80 Secteur velivole Vallorbe gere par Geneve (22/02/2017) **
 AC W
-AN LS-T80 Vallorbe jusque FL95-2900m Autorisation GENEVE DELTA 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
+AN LS-T80 Vallorbe jusque FL95-2900m Autorisation Geneva Alps Radar 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
 AH FL 95
 AL FL 75
 AF 119.175
@@ -4394,7 +4394,7 @@ DP 46:34:23 N 006:19:35 E
 DP 46:38:23 N 006:12:37 E
 
 AC C
-AN LS-T80 Vallorbe au dessus de FL95-2900m Autorisation et veille GENEVE DELTA 119.175
+AN LS-T80 Vallorbe au dessus de FL95-2900m Autorisation et veille Geneva Alps Radar 119.175
 AH FL 145
 AL FL 95
 AF 119.175
@@ -5917,7 +5917,7 @@ DP 46:30:00 N 004:40:29 E
 
 ** TMA LYON Partie 08 (10/11/2016) **
 AC D
-AN TMA LYON partie 08 GENEVE DELTA 119.175
+AN TMA LYON partie 08 Geneva Alps Radar 119.175
 AH FL145
 AL FL115
 AF 119.175
@@ -5933,7 +5933,7 @@ DP 46:14:14 N 005:34:35 E
 DP 46:21:48 N 005:24:28 E
 
 AC C
-AN TMA LYON partie 08 GENEVE DELTA 119.175
+AN TMA LYON partie 08 Geneva Alps Radar 119.175
 AH FL115
 AL FL075
 AF 119.175
@@ -5950,7 +5950,7 @@ DP 46:21:48 N 005:24:28 E
 
 ** TMA LYON Partie 08.1 Oyonnax Nord (22/02/2017) **
 AC C
-AN VV TMA LYON Partie 08.1 Oyonnax Nord Autorisation GENEVE DELTA 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
+AN VV TMA LYON Partie 08.1 Oyonnax Nord Autorisation Geneva Alps Radar 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
 AH FL085
 AL FL075
 AF 119.175
@@ -14259,7 +14259,7 @@ DP 45:14:51 N 005:40:09 E
 
 ** LF-R 135 Oyonnax Sud (22/02/2017) **
 AC R
-AN VV R135 Oyonnax Sud Autorisation GENEVE DELTA 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
+AN VV R135 Oyonnax Sud Autorisation Geneva Alps Radar 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
 AH FL085
 AL FL075
 AF 119.175
@@ -16084,7 +16084,7 @@ DP 44:39:20 N 003:31:20 E
 
 ** LF-R 219 Saint-Claude Sud (22/02/2017) **
 AC R
-AN VV R219 Saint-Claude Sud Autorisation GENEVE DELTA 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
+AN VV R219 Saint-Claude Sud Autorisation Geneva Alps Radar 119.175 - ATIS 124.750 - VEILLE RADIO 125.025
 AH FL085
 AL FL075
 AF 119.175
