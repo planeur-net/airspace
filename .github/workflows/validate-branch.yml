@@ -31,14 +31,16 @@ jobs:
       uses: actions/checkout@v3
 
     - id: validation
-      name:  Validate france.txt
+      name:  Validate france.txt + generate .geojson
       run: |
         echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
         cd openaip-openair-parser
         npm install
         echo "## Validating ..."
-        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -o delete_me.geojson)
+        rm ../france.geojson
+        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -o ../france.geojson)
+        SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
     outputs:
