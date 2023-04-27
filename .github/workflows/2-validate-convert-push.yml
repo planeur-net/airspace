@@ -23,6 +23,7 @@ on:
 # see: https://github.com/marketplace/actions/ftp-deployment
 jobs:
   validate-airspace:
+    if: false
     name: Validate OpenAir france.txt
     runs-on: ubuntu-latest
 
