@@ -4,6 +4,8 @@ name: 1 - Add version to france.txt
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   push:
+    branches:
+      - main
     paths:
       - 'france.txt'
 
