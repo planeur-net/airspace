@@ -36,8 +36,6 @@ jobs:
         echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
         cd openaip-openair-parser
-        echo "Rolling back parser to version 1.12 for compatibility reason"
-        git reset --hard 78c10b1f3fbf62699273164c069b2a8c1cca0931
         npm install
         echo "## Validating ..."
         rm ../france.geojson
