@@ -6,6 +6,9 @@ name: feature/* Validate france.txt
 on:
   push:
     branches: [ "feature/*" ]
+    paths:
+      - 'france.txt'
+      
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
     inputs:
@@ -36,13 +39,11 @@ jobs:
         echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
         cd openaip-openair-parser
-        echo "Rolling back parser to version 1.12 for compatibility reason"
-        git reset --hard 78c10b1f3fbf62699273164c069b2a8c1cca0931
         npm install
         echo "## Validating ..."
         rm ../france.geojson
         echo "Run validation script"
-        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -o ../france.geojson)
+        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -E -o ../france.geojson)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT"
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
