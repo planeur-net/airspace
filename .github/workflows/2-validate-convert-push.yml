@@ -71,10 +71,10 @@ jobs:
     if: false
     name: 🎉 Upload files to FTP
     runs-on: ubuntu-latest
-    #needs: [validate-airspace]
-    # if: |
-    #   always() &&
-    #   contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
+    needs: [check-validation]
+    if: |
+      always() &&
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
 
     steps:
     - name: 🚚 Get latest code
@@ -101,10 +101,10 @@ jobs:
     if: false
     name: Convert france.txt to .cub
     runs-on: ubuntu-latest
-    #needs: [validate-airspace]
-    # if: |
-    #   always() &&
-    #   contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
+    needs: [check-validation]
+    if: |
+      always() &&
+      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
