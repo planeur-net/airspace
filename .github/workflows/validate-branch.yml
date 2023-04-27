@@ -40,7 +40,7 @@ jobs:
         echo "## Validating ..."
         rm ../france.geojson
         echo "Run validation script"
-        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug - E -o ../france.geojson)
+        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -E -o ../france.geojson)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT"
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
