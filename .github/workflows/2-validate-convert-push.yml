@@ -7,6 +7,8 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'france.txt'
 
   # Triggers the workflow After the version has been added
   workflow_run:
