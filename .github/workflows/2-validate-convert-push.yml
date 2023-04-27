@@ -17,7 +17,6 @@ on:
 # see: https://github.com/marketplace/actions/ftp-deployment
 jobs:
   validate-airspace:
-    if: false
     name: Validate OpenAir france.txt
     runs-on: ubuntu-latest
 
@@ -47,7 +46,27 @@ jobs:
     outputs:
       validation-output: ${{ steps.validation.outputs.parser_output }}
 
+    check-validation:
+      name: Check Validation
+      runs-on: ubuntu-latest
+      needs: [validate-airspace]
+      steps:
+      - name: Display validation output
+        run: |
+          echo "Validation output="
+          echo ${{needs.validate-airspace.outputs.validation-output}}
+
+      - name: Check validation
+        if: |
+          always() &&
+          contains(needs.validate-airspace.outputs.validation-output, 'Error')
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('Validation failed ! See Above step for details...')
+
   web-deploy:
+    if: false
     name: 🎉 Upload files to FTP
     runs-on: ubuntu-latest
     #needs: [validate-airspace]
@@ -77,6 +96,7 @@ jobs:
         dry-run: false
 
   convert-to-cub:
+    if: false
     name: Convert france.txt to .cub
     runs-on: ubuntu-latest
     #needs: [validate-airspace]
