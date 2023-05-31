@@ -4,7 +4,7 @@
 *                               AIRSPACE OF FRANCE                             *
 *                         OPTIMIZED FOR GLIDER ACTIVITY                        *
 *                                                                              *
-*                        SOURCE: AIP FRANCE 2023/04/20                         *
+*                        SOURCE: AIP FRANCE 2023/05/18                         *
 *                     https://www.sia.aviation-civile.gouv.fr                  *
 *                                                                              *
 *                 >>>>> UNOFFICIAL, USE AT YOUR OWN RISK <<<<<                 *
@@ -65,7 +65,12 @@
 ****	Mod R593 
 ****	Mod R1250
 ****	Mod SECTEURS VELIVOLES ALPILLES
-****	Mod ZONES SENSIBILITE MAXIMALE- ALPES- BIRD PROTECTION AREAS
+
+****    Mod R49 couloirs transit
+****   	Mod R139 A
+****    Mod R302
+****   	Mod TMA LYON 15
+****    Mod ZONES SENSIBILITE MAXIMALE- ALPES- BIRD PROTECTION AREAS
 
 *********************************
 *   ZONE REGLEMENTE TEMPORAIRE  *
