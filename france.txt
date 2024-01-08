@@ -1211,6 +1211,15 @@ DP 48:56:00 N 001:08:30 E
 DP 49:00:00 N 001:01:00 E
 DP 49:10:22 N 001:14:51 E
 
+** ZIT  EVREUX (2023/11/30) **
+AC UNCLASSIFIED
+AY P
+AN ZIT Evreux
+AH FL055
+AL GND
+V X=49:01:43 N 001:13:12 E
+DC 3 
+
 ** Dispensatory Glider Transit Axes SCTR EVREUX (21 MAR 2002) **
 ** Axe 1 Verneuil-Conches-LeNeubourg-Rouen **
 AC G
