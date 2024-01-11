@@ -90,6 +90,8 @@ jobs:
           sed -i "$((grep -nm1 *version= ./france.txt || echo 1000000000:) | cut -f 1 -d:) d" ./france.txt
           # Add version information
           sed -i "1i *version= $versionInfo" ./france.txt
+
+          git pull
           
       # Push changes to repo    
       - name: Push changes into repo
