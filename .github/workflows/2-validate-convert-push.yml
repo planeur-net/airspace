@@ -25,8 +25,8 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
-    - id: validation
-      name:  Validate france.txt + generate .geojson
+    - name:  Validate france.txt + generate .geojson
+      id: validation
       run: |
         echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
@@ -84,8 +84,8 @@ jobs:
         uses: actions/checkout@v3
           
       # Add version information to france.txt
-      - id: add_version
-        name: Get info, delete 1st line if applicable, add info
+      - name: Get info, delete 1st line if applicable, add info
+        id: add_version
         run: |
           # Get information
           git log --pretty="%h %cI" -n1 -- france.txt
@@ -119,9 +119,9 @@ jobs:
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
-
-    - id: convert_to_cub  
-      name: ⚙️ Convert to .cub and push to repo
+ 
+    - name: ⚙️ Convert to .cub and push to repo
+      id: convert_to_cub 
       run: |
         echo "Creating new .cub file"
         chmod +x ./bin/openair2cub
