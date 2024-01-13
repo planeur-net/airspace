@@ -21,6 +21,10 @@ jobs:
     name: Validate OpenAir france.txt
     runs-on: ubuntu-latest
 
+    outputs:
+      validation-output: ${{ steps.validation.outputs.parser_output }}
+      commit-message-output: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
+
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
@@ -38,17 +42,19 @@ jobs:
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
+    - name: Get commit Message
+      id: get_commit_message
+      run: |
         # Save commit message for future push
         echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
 
     - name: ⚙️ Push .geojson to repo
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: ${{ steps.validation.outputs.LAST_COMMIT_MESSSAGE }}
+        commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
         file_pattern: 'france.geojson'
 
-    outputs:
-      validation-output: ${{ steps.validation.outputs.parser_output }}
+    
 
 
   check-validation:
