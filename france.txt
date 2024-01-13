@@ -29,8 +29,6 @@
 
 
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
-
-
 ****  	+ TMA CHAMBERY 4
 ****	+ TMA NICE 1.2
 **** 	+ TMA PROVENCE TEMPORAIRE
