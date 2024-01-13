@@ -38,10 +38,13 @@ jobs:
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
+        # Save commit message for future push
+        echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
+
     - name: ⚙️ Push .geojson to repo
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Automated Change
+        commit_message: ${{ steps.validation.outputs.LAST_COMMIT_MESSSAGE }}
         file_pattern: 'france.geojson'
 
     outputs:
@@ -81,7 +84,8 @@ jobs:
         uses: actions/checkout@v3
           
       # Add version information to france.txt
-      - name: Get info, delete 1st line if applicable, add info
+      - id: add_version
+        name: Get info, delete 1st line if applicable, add info
         run: |
           # Get information
           git log --pretty="%h %cI" -n1 -- france.txt
@@ -92,12 +96,16 @@ jobs:
           sed -i "1i *version= $versionInfo" ./france.txt
 
           git pull
+
+          # Save commit message for future push
+          echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
+
           
       # Push changes to repo    
       - name: Push changes into repo
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: Automated Change
+          commit_message: ${{ steps.add_version.outputs.LAST_COMMIT_MESSSAGE }}
           file_pattern: 'france.txt'
 
 
@@ -112,7 +120,8 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
-    - name: ⚙️ Convert to .cub and push to repo
+    - id: convert_to_cub  
+      name: ⚙️ Convert to .cub and push to repo
       run: |
         echo "Creating new .cub file"
         chmod +x ./bin/openair2cub
@@ -121,10 +130,13 @@ jobs:
         echo "Pulling latest version before push..."
         git pull
 
+        # Save commit message for future push
+        echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
+
     - name: ⚙️ Push .cub to repo
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        commit_message: Automated Change
+        commit_message: ${{ steps.convert_to_cub.outputs.LAST_COMMIT_MESSSAGE }}
         file_pattern: 'france.cub'
 
   publish-pages:
