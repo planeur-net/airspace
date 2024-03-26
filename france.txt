@@ -30357,12 +30357,12 @@ DP 50:43:22 N 002:36:28 E
 
 
 *====================================================================
-** ZSM Gypaete actives 01/03/2024 Infos STAC **
+** ZSM Gypaete actives Infos STAC **
 * https://www.stac.aviation-civile.gouv.fr/fr/zsm
 * 
 * https://github.com/llauner/kml2OpenAir
 *====================================================================
-
+* ### ZSM start ###
 
 **ZONE SENSIBILITE MAXIMUM**
 **Site ZSM Gypaete  Bird Protection Tampon**
@@ -33275,5 +33275,5 @@ DP 44:12:44 N 003:27:25 E
 DP 44:12:40 N 003:27:56 E
 DP 44:12:22 N 003:28:16 E
 DP 44:12:02 N 003:28:23 E
-
+* ### ZSM stop ###
 *=== Fin ZSM =================================================================
