@@ -45,20 +45,24 @@ jobs:
             echo "## Insert new ZSM entries ..."
             sed -i '/\* ### ZSM start ###/r  ${{ steps.variables.outputs.filename }}' france.txt
 
-        - name: ⚙️ Push _zsm_openair.txt + france.txt to repo
-          uses: stefanzweifel/git-auto-commit-action@v5
-          with:
-              repository: ./airspace
-              commit_message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
-              branch: ${{ steps.variables.outputs.branch_name }}
-              create_branch: true
-              file_pattern:  '${{ steps.variables.outputs.filename }} france.txt'
-
-        # - name: Create Pull Request
-        #   uses: peter-evans/create-pull-request@v6
+        # - name: ⚙️ Push _zsm_openair.txt + france.txt to repo
+        #   uses: stefanzweifel/git-auto-commit-action@v5
         #   with:
-        #         title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
-        #         path: ./airspace
-        #         base: main
-        #         branch: ${{ steps.variables.outputs.branch_name }}
-        #         body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
+        #       repository: ./airspace
+        #       commit_message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+        #       branch: ${{ steps.variables.outputs.branch_name }}
+        #       create_branch: true
+        #       file_pattern:  '${{ steps.variables.outputs.filename }} france.txt'
+
+        - name: Create Pull Request
+          uses: peter-evans/create-pull-request@v6
+          with:
+                title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+                commit-message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+                path: ./airspace
+                add-paths: |
+                    ${{ steps.variables.outputs.filename }}
+                    france.txt
+                base: main
+                branch: ${{ steps.variables.outputs.branch_name }}
+                body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
