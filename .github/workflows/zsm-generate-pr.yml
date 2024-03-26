@@ -42,7 +42,7 @@ jobs:
             cd kml2OpenAir
             npm install
             echo "## Downloading and converting kmlfile ...: ${{ github.event.inputs.ZSM_URL }}"
-            node ./main.js ${{ github.event.inputs.ZSM_URL }} ../zsm_openair.txt
+            node ./main.js ${{ github.event.inputs.ZSM_URL }} ../airspace/zsm_openair.txt
 
             cd ../airspace
             git pull
