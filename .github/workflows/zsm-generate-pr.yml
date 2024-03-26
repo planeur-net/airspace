@@ -62,5 +62,6 @@ jobs:
           with:
                 title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
                 path: ./airspace
+                base: main
                 branch: ${{ steps.variables.outputs.branch_name }}
                 body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
