@@ -25,7 +25,7 @@ jobs:
         
         - name: Compute output filename
           id: output_filename
-          run: echo "::set-output filename=../airspace/${{ steps.date.outputs.date }}_zsm_openair.txt"
+          run: echo "::set-output name=filename::../airspace/${{ steps.date.outputs.date }}_zsm_openair.txt"
 
         - name: Download and convert ZSM file
           id: download-convert
