@@ -54,11 +54,11 @@ jobs:
               create_branch: true
               file_pattern:  '${{ steps.variables.outputs.filename }} france.txt'
 
-        - name: Create Pull Request
-          uses: peter-evans/create-pull-request@v6
-          with:
-                title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
-                path: ./airspace
-                base: main
-                branch: ${{ steps.variables.outputs.branch_name }}
-                body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
+        # - name: Create Pull Request
+        #   uses: peter-evans/create-pull-request@v6
+        #   with:
+        #         title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+        #         path: ./airspace
+        #         base: main
+        #         branch: ${{ steps.variables.outputs.branch_name }}
+        #         body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
