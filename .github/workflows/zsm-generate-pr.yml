@@ -55,11 +55,12 @@ jobs:
               commit_message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
               branch: ${{ steps.variables.outputs.branch_name }}
               create_branch: true
-              file_pattern:  ${{ steps.variables.outputs.filename }}
+              file_pattern:  '${{ steps.variables.outputs.filename }} france.txt'
 
         - name: Create Pull Request
-          uses: peter-evans/create-pull-request@v3
+          uses: peter-evans/create-pull-request@v6
           with:
                 title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+                path: ./airspace
                 branch: ${{ steps.variables.outputs.branch_name }}
                 body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
