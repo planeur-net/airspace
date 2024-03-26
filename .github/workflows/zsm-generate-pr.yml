@@ -25,7 +25,7 @@ jobs:
         
         - name: Compute output filename
           id: output_filename
-          run: echo "::set-output name=filename::../airspace/${{ steps.date.outputs.date }}_zsm_openair.txt"
+          run: echo "::set-output name=filename::${{ steps.date.outputs.date }}_zsm_openair.txt"
 
         - name: Download and convert ZSM file
           id: download-convert
@@ -37,7 +37,7 @@ jobs:
             cd kml2OpenAir
             npm install
             echo "## Downloading and converting kmlfile ...: ${{ github.event.inputs.ZSM_URL }}"
-            node ./main.js ${{ github.event.inputs.ZSM_URL }} ${{ steps.output_filename.outputs.filename }}
+            node ./main.js ${{ github.event.inputs.ZSM_URL }} ../airspace/${{ steps.output_filename.outputs.filename }}
 
         - name: Insert new ZSM
           run: |
