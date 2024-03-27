@@ -33,6 +33,9 @@ jobs:
             git clone https://github.com/llauner/kml2OpenAir.git
             cd kml2OpenAir
             npm install
+            echo "## Remove old zsm files ..."
+            rm -f ../airspace/*_zsm_openair.txt
+
             echo "## Downloading and converting kmlfile ...: ${{ github.event.inputs.ZSM_URL }}"
             node ./main.js ${{ github.event.inputs.ZSM_URL }} ../airspace/${{ steps.variables.outputs.filename }}
 
@@ -45,24 +48,24 @@ jobs:
             echo "## Insert new ZSM entries ..."
             sed -i '/\* ### ZSM start ###/r  ${{ steps.variables.outputs.filename }}' france.txt
 
-        # - name: ⚙️ Push _zsm_openair.txt + france.txt to repo
-        #   uses: stefanzweifel/git-auto-commit-action@v5
-        #   with:
-        #       repository: ./airspace
-        #       commit_message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
-        #       branch: ${{ steps.variables.outputs.branch_name }}
-        #       create_branch: true
-        #       file_pattern:  '${{ steps.variables.outputs.filename }} france.txt'
-
-        - name: Create Pull Request
-          uses: peter-evans/create-pull-request@v6
+        - name: ⚙️ Push .geojson to repo
+          uses: stefanzweifel/git-auto-commit-action@v4
           with:
-                title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
-                commit-message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
-                path: ./airspace
-                add-paths: |
-                    ${{ steps.variables.outputs.filename }}
-                    france.txt
-                base: main
-                branch: ${{ steps.variables.outputs.branch_name }}
-                body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
+            commit_message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+            repository: ./airspace
+            file_pattern: '${{ steps.variables.outputs.filename }} *_zsm_openair.txt france.txt'
+            branch: ${{ steps.variables.outputs.branch_name }}
+
+        # - name: Create Pull Request
+        #   uses: peter-evans/create-pull-request@v6
+        #   with:
+        #         title: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+        #         commit-message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
+        #         path: ./airspace
+        #         add-paths: |
+        #             ${{ steps.variables.outputs.filename }}
+        #             *_zsm_openair.txt
+        #             france.txt
+        #         base: main
+        #         branch: ${{ steps.variables.outputs.branch_name }}
+        #         body: "This PR adds a new ZSM file for the date ${{ steps.variables.outputs.date }}."
