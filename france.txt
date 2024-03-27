@@ -30363,6 +30363,7 @@ DP 50:43:22 N 002:36:28 E
 * https://github.com/llauner/kml2OpenAir
 *====================================================================
 * ### ZSM start ###
+* Date=zsm_tampon__kml__03__2024__kg461
 
 **ZONE SENSIBILITE MAXIMUM**
 **Site ZSM Gypaete  Bird Protection Tampon**
