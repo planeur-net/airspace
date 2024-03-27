@@ -1,4 +1,4 @@
-name: Generate ZSM Pull Request
+name: Generate updated ZSM branch
 
 on: 
     workflow_dispatch:
