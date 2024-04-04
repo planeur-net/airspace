@@ -20,9 +20,7 @@
 *           This file is provided free of charge with no warrantees,           *
 *             expressed or implied. USER ASSUMES ALL RISK OF USE.              *
 *                                                                              *
-*                           Courtesy of French Gliding Association :           *
-*                   https://www.ffvp.fr/liens-utiles-telechargements           *
-*                                                                              *       
+*                           Courtesy of French Gliding Association :           *  
 *                       contact : commission.espaceaerien@ffvp.fr              *
 *                                                                              *
 ********************************************************************************
@@ -37,7 +35,7 @@
 ****	+ ZIT EVREUX
 ****	+ ZRT SALBRIS
 ****    + ZRT Gondrans, Granon, Izoard
-****    + ZSM 1/03/2024
+****    + ZSM: voir la ligne Date=zsm_tampon__kml__MM__YYYYY__537in
 
 ****  	- TMA NANTES 4 
 ****	- ZRT POLSET A+B
