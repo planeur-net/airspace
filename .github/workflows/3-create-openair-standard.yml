@@ -35,6 +35,13 @@ jobs:
           path: ./OpenAirExtended2OpenAir
           ref: master
 
+      - name: 🚚 Get openaip-openair-parser
+        uses: actions/checkout@v3
+        with:
+          repository: openAIP/openaip-openair-parser
+          path: ./openaip-openair-parser
+          ref: master
+
       - name: Convert to OpenAir standard
         id: convert
         run: |
@@ -49,7 +56,7 @@ jobs:
         id: validation
         run: |
           echo "## Install openaip-openair-parser"
-          git clone https://github.com/openAIP/openaip-openair-parser.git
+          #git clone https://github.com/openAIP/openaip-openair-parser.git
           cd openaip-openair-parser
           npm install
           echo "## Validating ..."
@@ -64,9 +71,7 @@ jobs:
           echo ${{steps.validation.outputs.parser_output}}
 
       - name: Check validation
-        if: |
-          always() &&
-          contains(steps.validation.outputs.parser_output, 'Error')
+        if: contains(${{steps.validation.outputs.parser_output}}, 'Error')
         uses: actions/github-script@v3
         with:
           script: |
