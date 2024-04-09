@@ -11,6 +11,6 @@ The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/z
 | File | Format | Auto. Gen. | Download |
 | --- | --- | --- | --- |
 | france.txt | OpenAir | :pencil2: | [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) | 
-| france_openair_standard.txt | OpenAir | :pencil2: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) |
+| france_openair_standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) |
 | france.cub | cub | :heavy_check_mark: | [france.cub](https://planeur-net.github.io/airspace/france.cub) | 
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) | 
