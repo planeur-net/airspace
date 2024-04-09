@@ -1,0 +1,70 @@
+# Create OpenAir Standard
+
+name: 3-create-openair-standard
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  workflow_run:
+    workflows: ["1-[main] Validate, Add Version, Convert, Push to FTP"]
+    types:
+      - completed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# see: https://github.com/marketplace/actions/ftp-deployment
+jobs:
+
+  convert-openair-standard:
+    name: Convert to OpenAir standard
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v3
+        with:
+          path: ./airspace
+
+      - name: 🚚 Get OpenAirExtended2OpenAir
+        uses: actions/checkout@v3
+        with:
+          repository: llauner/OpenAirExtended2OpenAir
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: ./OpenAirExtended2OpenAir
+          ref: master
+
+      - name: Convert to OpenAir standard
+        id: convert
+        run: |
+          echo "## Install OpenAirExtended2OpenAir"
+          cd OpenAirExtended2OpenAir
+          npm install
+          echo "## Converting ..."
+          node ./main.js ../airspace/france.txt ../airspace/france_openair_standard.txt
+
+      - name: Get commit Message
+        id: get_commit_message
+        run: |
+          # Save commit message for future push
+          cd ./airspace
+          echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
+
+      - name: ⚙️ Push .geojson to repo
+        id: push_changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          repository: ./airspace
+          commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
+          file_pattern: 'france_openair_standard.txt'
+
+  publish-pages:
+    name: Pyublish pages to github pages
+    runs-on: ubuntu-latest
+    needs: [convert-openair-standard]
+    steps:
+    - name: Trigger event for github pages update
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        event-type: update-pages-event
