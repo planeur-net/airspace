@@ -44,6 +44,35 @@ jobs:
           echo "## Converting ..."
           node ./main.js ../airspace/france.txt ../airspace/france_openair_standard.txt
 
+
+      - name:  Validate france.txt + generate .geojson
+        id: validation
+        run: |
+          echo "## Install openaip-openair-parser"
+          git clone https://github.com/openAIP/openaip-openair-parser.git
+          cd openaip-openair-parser
+          npm install
+          echo "## Validating ..."
+          rm ../france.geojson
+          SCRIPT_OUTPUT=$(node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ../france.geojson)
+          SCRIPT_RC=$?
+          echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
+
+
+      - name: Display validation output
+        run: |
+          echo "Validation output="
+          echo ${{steps.validation.outputs.parser_output}}
+
+      - name: Check validation
+        if: |
+          always() &&
+          contains(steps.validation.outputs.parser_output, 'Error')
+        uses: actions/github-script@v3
+        with:
+          script: |
+            core.setFailed('Validation failed ! See Above step for details...')
+
       - name: Get commit Message
         id: get_commit_message
         run: |
@@ -51,7 +80,7 @@ jobs:
           cd ./airspace
           echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
 
-      - name: ⚙️ Push .geojson to repo
+      - name: ⚙️ Push france_openair_standard.txt to repo
         id: push_changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
