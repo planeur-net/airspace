@@ -8,7 +8,7 @@ Ce fichier est compilé bénévolement à partir des publications [AIP](https://
 Les [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm) sont mises a jour régulièrement a partir du fichier KML et de l'outil [Kml2OpenAir](https://github.com/llauner/kml2OpenAir)
 
 ### OpenAir Standard / Extended
-Le format OpenAir extended n’étant pas encore correctement supporte dans XCsoar ([#1340](https://github.com/XCSoar/XCSoar/issues/1340), [#1349](https://github.com/XCSoar/XCSoar/pull/1349)) ou dans SeeYou Navigator, une version OpenAir Standard est générée automatiquement a partir de la version maintenue au format extended.
+Le format OpenAir extended n’étant pas encore correctement supporté dans XCsoar ([#1340](https://github.com/XCSoar/XCSoar/issues/1340), [#1349](https://github.com/XCSoar/XCSoar/pull/1349)) ou dans SeeYou Navigator, une version OpenAir Standard est générée automatiquement a partir de la version maintenue au format extended.
 
 
 # Download

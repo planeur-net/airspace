@@ -53,7 +53,6 @@ jobs:
           cd openaip-openair-parser
           npm install
           echo "## Validating ..."
-          rm ../france.geojson
           SCRIPT_OUTPUT=$(node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ../france.geojson)
           SCRIPT_RC=$?
           echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
