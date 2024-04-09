@@ -71,10 +71,11 @@ jobs:
           echo ${{steps.validation.outputs.parser_output}}
 
       - name: Check validation
-        if: contains(${{steps.validation.outputs.parser_output}}, 'Error')
+        if: contains(steps.validation.outputs.parser_output, 'Error')
         uses: actions/github-script@v3
         with:
           script: |
+            always() &&
             core.setFailed('Validation failed ! See Above step for details...')
 
       - name: Get commit Message
