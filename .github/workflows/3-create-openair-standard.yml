@@ -49,6 +49,7 @@ jobs:
           cd OpenAirExtended2OpenAir
           npm install
           echo "## Converting ..."
+          rm ../airspace/france_openair_standard.txt
           node ./main.js ../airspace/france.txt ../airspace/france_openair_standard.txt
 
 
