@@ -56,11 +56,12 @@ jobs:
         id: validation
         run: |
           echo "## Install openaip-openair-parser"
-          #git clone https://github.com/openAIP/openaip-openair-parser.git
           cd openaip-openair-parser
           npm install
           echo "## Validating ..."
-          SCRIPT_OUTPUT=$(node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ../france.geojson)
+          node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ./tmp.geojson
+          rm ./tmp.geojson
+          SCRIPT_OUTPUT=$(node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ./tmp.geojson)
           SCRIPT_RC=$?
           echo "parser_output=$SCRIPT_OUTPUT"
           echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
