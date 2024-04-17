@@ -1,6 +1,6 @@
 # Copy file to planeur.net FTP server
 
-name: Validate_Add_Version_Convert_Push_to_FTP
+name: 1-Validate_Add_Version_Convert_Push_to_FTP
 
 # Controls when the workflow will run
 on:

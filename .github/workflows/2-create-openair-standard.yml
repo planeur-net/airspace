@@ -1,6 +1,6 @@
 # Create OpenAir Standard
 
-name: 2-create-openair-standard
+name: 2-create_openair_standard
 
 # Controls when the workflow will run
 on:
