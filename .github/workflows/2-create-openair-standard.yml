@@ -1,12 +1,12 @@
 # Create OpenAir Standard
 
-name: 3-create-openair-standard
+name: 2-create-openair-standard
 
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   workflow_run:
-    workflows: ["1-[main] Validate, Add Version, Convert, Push to FTP"]
+    workflows: ["Validate_Add_Version_Convert_Push_to_FTP"]
     types:
       - completed
 
