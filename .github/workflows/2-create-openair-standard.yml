@@ -23,12 +23,12 @@ jobs:
 
     steps:
       - name: 🚚 Get latest code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           path: ./airspace
 
       - name: 🚚 Get OpenAirExtended2OpenAir
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: llauner/OpenAirExtended2OpenAir
           token: ${{ secrets.ACCESS_TOKEN }}
@@ -36,7 +36,7 @@ jobs:
           ref: master
 
       - name: 🚚 Get openaip-openair-parser
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         with:
           repository: openAIP/openaip-openair-parser
           path: ./openaip-openair-parser
@@ -89,7 +89,7 @@ jobs:
 
       - name: ⚙️ Push france_openair_standard.txt to repo
         id: push_changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v5
         with:
           repository: ./airspace
           commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
