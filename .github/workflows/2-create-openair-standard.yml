@@ -104,3 +104,17 @@ jobs:
       uses: peter-evans/repository-dispatch@v2
       with:
         event-type: update-pages-event
+
+  push-event-to-other-repo:
+    needs: [convert-openair-standard]
+    name: Dispatch to other repo= planeur-net/outlanding
+    runs-on: ubuntu-latest
+    steps:
+      - name: Emit repository_dispatch
+        uses: mvasigh/dispatch-action@main
+        with:
+          # You should create a personal access token and store it in your repository
+          token: ${{ secrets.ACCESS_TOKEN }}
+          repo: outlanding
+          owner: planeur-net
+          event_type: airspace-update
