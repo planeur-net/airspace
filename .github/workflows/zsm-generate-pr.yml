@@ -6,7 +6,7 @@ on:
         ZSM_URL:
           description: 'URL to the ZSM .kml file'     
           required: true
-          default: 'https://www.stac.aviation-civile.gouv.fr/sites/default/files/france_1.kml' 
+          default: 'https://www.stac.aviation-civile.gouv.fr/sites/default/files/france.kml' 
 
 jobs:
     Download-Convert-ZSM-File:
