@@ -1,4 +1,4 @@
-*version= 7e79270 2024-05-17T08:10:37+02:00
+*version= a6752b5 2024-05-17T08:24:34+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -28647,7 +28647,7 @@ DP 50:43:22 N 002:36:28 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-2A SEC 1413 | EVISA (felce) - (6046)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:16:08 N 008:49:44 E
 DP 42:16:04 N 008:49:47 E
@@ -28753,7 +28753,7 @@ DP 42:16:08 N 008:49:44 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-64 AS 134 | Orgues de Camplong - (6092)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:57:21 N 001:20:11 W
 DP 42:56:55 N 001:20:02 W
@@ -28770,7 +28770,7 @@ DP 42:57:21 N 001:20:11 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-04 SEC 044 | N-23-0000084 | Chauvet 1 - (3015)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:32:36 N 006:50:08 E
 DP 44:32:25 N 006:49:31 E
@@ -28802,7 +28802,7 @@ DP 44:32:36 N 006:50:08 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-66 SEC 074 | J1 - Thuès entre Valls / Carança | Roc de l'Aigle - (3045)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:30:47 N 002:12:59 E
 DP 42:30:53 N 002:13:03 E
@@ -28858,7 +28858,7 @@ DP 42:30:47 N 002:12:59 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-66 SEC 1283 | I2 Err - Coma Dolca | Coma Dolca - (5890)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:23:32 N 002:06:33 E
 DP 42:23:11 N 002:06:34 E
@@ -28883,7 +28883,7 @@ DP 42:23:32 N 002:06:33 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-66 SEC 060 | I3 - Carol - Cortvassill / Pedraguera - (3042)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:30:54 N 001:49:40 E
 DP 42:31:04 N 001:49:30 E
@@ -28915,7 +28915,7 @@ DP 42:30:54 N 001:49:40 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-64 SEC 1278 | B2 - Kakuetta RD amont | Kakuetta rive droite amont - (5885)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:58:22 N 001:09:42 W
 DP 42:58:18 N 001:09:42 W
@@ -29112,7 +29112,7 @@ DP 42:58:22 N 001:09:42 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-09 SEC 068 | H4 - Auzat / Soulcem - (3032)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:42:06 N 001:27:01 E
 DP 42:42:05 N 001:27:06 E
@@ -29172,7 +29172,7 @@ DP 42:42:06 N 001:27:01 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-09 SEC 023 | H3W - Seix / Estours | les Portes - (2990)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:47:44 N 001:07:55 E
 DP 42:47:40 N 001:07:51 E
@@ -29329,7 +29329,7 @@ DP 42:47:44 N 001:07:55 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-09 SEC 018 | H5 - Sinsat / Les Quiès - (2986)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:48:51 N 001:39:46 E
 DP 42:48:49 N 001:39:53 E
@@ -29418,7 +29418,7 @@ DP 42:48:51 N 001:39:46 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-31 SEC 227 | G3 - Saint-Mamet / Burbe - (3674)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:46:06 N 000:40:08 E
 DP 42:45:55 N 000:39:58 E
@@ -29443,7 +29443,7 @@ DP 42:46:06 N 000:40:08 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-65 SEC 028 | D1 Saint-Pé-de-Bigorre / Montné - (2988)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 43:03:57 N 001:52:47 W
 DP 43:03:41 N 001:53:15 W
@@ -29472,7 +29472,7 @@ DP 43:03:57 N 001:52:47 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-31 SEC 1417 | G5 | G5 - Lacusse - (6051)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:51:24 N 000:45:20 E
 DP 42:51:12 N 000:45:18 E
@@ -29499,7 +29499,7 @@ DP 42:51:24 N 000:45:20 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY AU 088 | F1W - Aragnouet / Moudang  | Moudang 2 - (3861)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:45:57 N 000:15:31 E
 DP 42:45:52 N 000:15:23 E
@@ -29525,7 +29525,7 @@ DP 42:45:57 N 000:15:31 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY LU 017 | D5 - Gèdre / Saussa | Ayrues - (3948)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:48:12 N 000:00:35 E
 DP 42:48:08 N 000:00:41 E
@@ -29571,7 +29571,7 @@ DP 42:48:12 N 000:00:35 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY AS 106 | C2 - Accous-La Marrère | La Marrère 1 - (4106)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:57:32 N 001:28:56 W
 DP 42:57:27 N 001:28:54 W
@@ -29621,7 +29621,7 @@ DP 42:57:32 N 001:28:56 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HT 079 | N-22-0000169 | Gorges de la Daille - (3708)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:27:54 N 006:57:59 E
 DP 45:27:48 N 006:57:58 E
@@ -29641,7 +29641,7 @@ DP 45:27:54 N 006:57:59 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-65 LU 071 | PNPY LU 071 | Ossoue3 - (5491)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:44:41 N 001:59:08 W
 DP 42:44:26 N 001:59:13 W
@@ -29661,7 +29661,7 @@ DP 42:44:41 N 001:59:08 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-65 LU 064 | D7 - Barèges / Baran | La bath de Sers - (4196)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:54:39 N 000:02:55 E
 DP 42:54:11 N 000:02:44 E
@@ -29680,7 +29680,7 @@ DP 42:54:39 N 000:02:55 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-66 SEC 1415 | J2 - Canigo - Olla | Olla - (6048)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:30:08 N 002:25:20 E
 DP 42:30:07 N 002:24:06 E
@@ -29693,7 +29693,7 @@ DP 42:30:08 N 002:25:20 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HT 068 | N-22-0000090 | Peisey 3 - (2839)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:28:49 N 006:49:49 E
 DP 45:28:54 N 006:49:46 E
@@ -29775,7 +29775,7 @@ DP 45:28:49 N 006:49:49 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-48 SEC 1056 | Dargilan_1 - (5516)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:11:47 N 003:24:09 E
 DP 44:11:40 N 003:24:24 E
@@ -29801,7 +29801,7 @@ DP 44:11:47 N 003:24:09 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-38 SEC 1264 | N-27-0000260 | Plan du Lac 2 - (5869)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:58:11 N 006:08:55 E
 DP 44:58:06 N 006:09:02 E
@@ -29821,7 +29821,7 @@ DP 44:58:11 N 006:08:55 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY AU 038 | F3 - Ancizan / Lio  | Pic de Lio - (4130)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:52:49 N 000:16:44 E
 DP 42:52:60 N 000:16:59 E
@@ -29860,7 +29860,7 @@ DP 42:52:49 N 000:16:44 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-65 SEC 078 | F2 - Génos / Coume de Rougnoude - (3051)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:45:44 N 000:23:10 E
 DP 42:45:58 N 000:22:59 E
@@ -29888,7 +29888,7 @@ DP 42:45:44 N 000:23:10 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY AU 007 | F1E - Saint-Lary / Rioumajou  | Rioumajou - (4074)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:46:29 N 000:19:21 E
 DP 42:46:21 N 000:19:35 E
@@ -29918,7 +29918,7 @@ DP 42:46:29 N 000:19:21 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 1276 | N-21-0000265 | Pierre Fendue - (5881)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:55:29 N 006:33:28 E
 DP 45:55:22 N 006:33:15 E
@@ -29943,7 +29943,7 @@ DP 45:55:29 N 006:33:28 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-2A SEC 059 | Guagno ouest / Casca Degna - (3019)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:12:60 N 008:58:50 E
 DP 42:12:52 N 008:59:40 E
@@ -29997,7 +29997,7 @@ DP 42:12:60 N 008:58:50 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-2B SEC 056 | Corte / Restonica - Spenicazzia - (3021)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:16:02 N 009:06:17 E
 DP 42:15:54 N 009:06:36 E
@@ -30050,7 +30050,7 @@ DP 42:16:02 N 009:06:17 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HM 027 | N-22-0000045 | Termignon 2 - (2822)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:19:09 N 006:47:49 E
 DP 45:19:25 N 006:47:40 E
@@ -30072,7 +30072,7 @@ DP 45:19:09 N 006:47:49 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 033 | 21 - Sixt-Fer-à-Cheval / ChardonnièresN-21-0000015 | Chardonnieres - (2996)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 46:00:29 N 006:46:30 E
 DP 46:00:17 N 006:46:52 E
@@ -30090,7 +30090,7 @@ DP 46:00:29 N 006:46:30 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-06 SEC 1044 | N-23-0000105 | Rocher du Prêtre 1 - (5498)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:18:08 N 006:51:32 E
 DP 44:18:07 N 006:51:15 E
@@ -30111,7 +30111,7 @@ DP 44:18:08 N 006:51:32 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HM 056 | Andagne 2 - (4154)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:20:12 N 007:02:37 E
 DP 45:20:07 N 007:02:44 E
@@ -30135,7 +30135,7 @@ DP 45:20:12 N 007:02:37 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HT 082 | N-22-0000227 | Charbonnet_Gypa - (4450)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:38:38 N 006:44:49 E
 DP 45:38:34 N 006:44:46 E
@@ -30194,7 +30194,7 @@ DP 45:38:38 N 006:44:49 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 SEC 1373 | N-22-0000307 | Croix des Têtes - (5988)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:14:57 N 006:27:04 E
 DP 45:14:46 N 006:27:10 E
@@ -30217,7 +30217,7 @@ DP 45:14:57 N 006:27:04 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-09 SEC 1414 | H10 Les Quiés - Sabart | H10 - Les baux- aire n°2 - (6047)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:49:59 N 001:36:05 E
 DP 42:49:50 N 001:36:09 E
@@ -30246,7 +30246,7 @@ DP 42:49:59 N 001:36:05 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HM 014 | N-22-0000092 | Andagne 1 - (2827)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:20:53 N 007:01:35 E
 DP 45:20:59 N 007:01:51 E
@@ -30269,7 +30269,7 @@ DP 45:20:53 N 007:01:35 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-48 SEC 304 | Capelan_1 - (4229)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:11:13 N 003:25:53 E
 DP 44:10:60 N 003:25:49 E
@@ -30302,7 +30302,7 @@ DP 44:11:13 N 003:25:53 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY OS 013 | C5 - Laruns-Pic de Lorry  | Lorry - (4040)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:59:44 N 001:30:43 W
 DP 42:59:45 N 001:30:56 W
@@ -30333,7 +30333,7 @@ DP 42:59:44 N 001:30:43 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-09 SEC 1411 | H11 - Merens | H11 - La Fuillaterre - (6043)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:36:43 N 001:50:44 E
 DP 42:36:27 N 001:50:39 E
@@ -30362,7 +30362,7 @@ DP 42:36:43 N 001:50:44 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-04 SEC 275 | N-23-0000156 | Pelvat Ubaye 1 PNM - (4174)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:35:07 N 006:56:05 E
 DP 44:34:60 N 006:55:59 E
@@ -30423,7 +30423,7 @@ DP 44:35:07 N 006:56:05 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 MO 001 | N-22-0000300 | Bra8 - (2701)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:12:40 N 006:50:48 E
 DP 45:12:34 N 006:50:42 E
@@ -30448,7 +30448,7 @@ DP 45:12:40 N 006:50:48 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-06 SEC 1042 | N-23-0000238 | Rayettes 2 - (5496)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:12:22 N 006:49:33 E
 DP 44:11:22 N 006:48:50 E
@@ -30471,7 +30471,7 @@ DP 44:12:22 N 006:49:33 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-06 SEC 378 | N-23-0000211 | Demandols 6 - (4332)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:12:45 N 006:51:58 E
 DP 44:12:21 N 006:51:46 E
@@ -30484,7 +30484,7 @@ DP 44:12:45 N 006:51:58 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 1275 | N-21-0000264 | Bargy5Sud - (5880)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 46:00:17 N 006:29:19 E
 DP 46:00:15 N 006:28:55 E
@@ -30511,7 +30511,7 @@ DP 46:00:17 N 006:29:19 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-2A SEC 061 | Guagno est / Alle Porta - (3056)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:12:60 N 008:58:50 E
 DP 42:12:52 N 008:59:40 E
@@ -30565,7 +30565,7 @@ DP 42:12:60 N 008:58:50 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 037 | 21 - Sixt-Fer-à-Cheval / PlacesN-21-0000070 | Pointe des Places - (2998)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 46:01:56 N 006:45:37 E
 DP 46:02:04 N 006:45:37 E
@@ -30600,7 +30600,7 @@ DP 46:01:56 N 006:45:37 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY AZ 053 | C9 - Asson / La Glacière | Laguigue - (3964)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 43:02:42 N 001:42:46 W
 DP 43:02:22 N 001:42:26 W
@@ -30618,7 +30618,7 @@ DP 43:02:42 N 001:42:46 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 1390 | N-21-0000295 | Meyrieu - (6020)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:57:49 N 006:39:60 E
 DP 45:57:31 N 006:40:04 E
@@ -30638,7 +30638,7 @@ DP 45:57:49 N 006:39:60 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-2B SEC 062 | Popolasca - (3020)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:24:51 N 009:03:57 E
 DP 42:24:60 N 009:03:57 E
@@ -30673,7 +30673,7 @@ DP 42:24:51 N 009:03:57 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-38 SEC 479 | N-27-0000218 | les bans - (4449)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:01:60 N 006:13:10 E
 DP 45:01:49 N 006:13:24 E
@@ -30706,7 +30706,7 @@ DP 45:01:60 N 006:13:10 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-26 SEC 1418 | Archiane - Les Assiers - (6052)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:43:29 N 005:30:49 E
 DP 44:43:12 N 005:30:45 E
@@ -30730,7 +30730,7 @@ DP 44:43:29 N 005:30:49 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-2A SEC 047 | Bavella - (3026)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 41:51:01 N 009:13:57 E
 DP 41:51:05 N 009:14:01 E
@@ -30786,7 +30786,7 @@ DP 41:51:01 N 009:13:57 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY LU 056 | D7 - Luz Saint-Sauveur / Abié  | Abié - (4052)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:50:59 N 000:00:31 E
 DP 42:50:36 N 000:00:23 E
@@ -30806,7 +30806,7 @@ DP 42:50:59 N 000:00:31 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 1288 | N-21-0000274 | Prodains - (5895)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 46:11:31 N 006:45:45 E
 DP 46:11:27 N 006:45:38 E
@@ -30827,7 +30827,7 @@ DP 46:11:31 N 006:45:45 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-64 OS 110 | C4 - Cézy - Aire des échelles | Aire des échelles - (6054)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:54:51 N 001:35:53 W
 DP 42:54:41 N 001:36:05 W
@@ -30862,7 +30862,7 @@ DP 42:54:51 N 001:35:53 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-PNPY LU 057 | D4 - Bagnères de Bigorre-Bizoutère | Bizourtère - (4063)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:56:33 N 000:03:30 E
 DP 42:56:38 N 000:03:03 E
@@ -30891,7 +30891,7 @@ DP 42:56:33 N 000:03:30 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-65 CA 030 | D6S - Cauterets | Raillère - (4301)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:52:09 N 001:54:09 W
 DP 42:51:48 N 001:53:46 W
@@ -30908,7 +30908,7 @@ DP 42:52:09 N 001:54:09 W
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-26 SEC 1047 | N-21-0000255 | Ambane1 - (5503)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:43:48 N 005:28:36 E
 DP 44:43:29 N 005:28:25 E
@@ -30935,7 +30935,7 @@ DP 44:43:48 N 005:28:36 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-09 SEC 065 | H6 - Aulus / Fouillet - (3035)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:45:36 N 001:18:48 E
 DP 42:45:40 N 001:18:50 E
@@ -30987,7 +30987,7 @@ DP 42:45:36 N 001:18:48 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-11 SEC 1395 | K1 Gorges de St Georges | Gorges de St Georges - (6027)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 42:46:57 N 002:14:32 E
 DP 42:46:41 N 002:14:33 E
@@ -31008,7 +31008,7 @@ DP 42:46:57 N 002:14:32 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-05 SEC 1375 | N-27-0000288 | Le Rompeau - (5991)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:49:21 N 006:14:17 E
 DP 44:49:15 N 006:14:19 E
@@ -31035,7 +31035,7 @@ DP 44:49:21 N 006:14:17 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-05 SEC 1381 | N-27-0000291 | L_Ardouere - (6000)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:45:31 N 006:07:20 E
 DP 44:45:20 N 006:07:10 E
@@ -31060,7 +31060,7 @@ DP 44:45:31 N 006:07:20 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-38 SEC 1263 | N-27-0000259 | Plan du Lac - (5868)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:58:11 N 006:08:55 E
 DP 44:58:06 N 006:09:02 E
@@ -31080,7 +31080,7 @@ DP 44:58:11 N 006:08:55 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 SEC 1031 | N-22-0000253 | Râteau Vieux - (5475)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:06:03 N 006:28:47 E
 DP 45:05:41 N 006:28:18 E
@@ -31100,7 +31100,7 @@ DP 45:06:03 N 006:28:47 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-74 SEC 1039 | N-21-0000022 | HS4BA4 Bargy 4 - (5493)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 46:00:17 N 006:29:19 E
 DP 46:00:15 N 006:28:55 E
@@ -31127,7 +31127,7 @@ DP 46:00:17 N 006:29:19 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-73 HT 001 | N-22-0000134 | Bourg 3 - (2842)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 45:40:52 N 006:43:38 E
 DP 45:40:56 N 006:43:47 E
@@ -31188,7 +31188,7 @@ DP 45:40:52 N 006:43:38 E
 **Site ZSM Gypaete  Bird Protection Tampon**
 AC P
 AN ZSM T-48 SEC 299 | taquet_1 | site_taquet_frepestel - (4222)
-AH 600m AGL
+AH 300m AGL
 AL GND
 DP 44:12:02 N 003:28:23 E
 DP 44:11:40 N 003:28:19 E
