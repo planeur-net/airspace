@@ -33224,18 +33224,4 @@ DP 44:12:01 N 003:28:22 E
 * Zones Temporaires
 *====================================================================
 
-* ZRT Meeting + PAF Gap
-* https://www.sia.aviation-civile.gouv.fr/media/store/documents/file/l/f/lf_sup_2024_068_fr.pdf
-AC UNCLASSIFIED
-AY R
-AN ZRT MEETING GAP: 18,19/04 + 2,13,14,(23,24),25,26/05 2024
-AH 8500 FT MSL
-AL SFC
-DP 44:34:20.91 N 006:00:52.78 E
-DP 44:32:41.27 N 006:05:38.23 E
-V X=44:27:12.69 N 006:02:16.56 E
-DB 44:32:41.27 N 006:05:38.23 E, 44:21:50.58 N 005:58:38.58 E
-DP 44:21:50.58 N 005:58:38.58 E
-DP 44:23:47.33 N 005:53:43.08 E
-DP 44:34:20.91 N 006:00:52.78 E
 *=== Fin Zones Temporaires===========================================
