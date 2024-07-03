@@ -1,4 +1,4 @@
-*version= 3e41143 2024-07-02T13:13:28+02:00
+*version= 93a50d3 2024-07-03T09:36:06+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -30,77 +30,13 @@
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
 
 
-****	+ CTA CLERMONT
-****  	+ CTA LIMOGES
-****  	+ CTA LYON
-****	+ CTA MARSEILLE
-****  	+ CTA TOULOUSE 1,2,3,4
-****    + LTA ALPES VERDON
-****	+ TMA LILLE 16
-****    + TMA NANTES 5,6
-****    + TMA RENNES 5,6
-****	+ RMZ LA MOLE
-****    + R64 A0 TOULON
-****    + P65 TAVERNY
-****    + P66 CREIL
-****    + P67 LUXEUIL
-****    + P68-1 LE ROZELIER
-****    + P73 MIRAMAS
-****    + P74 CHATEAUDOUBLE
-****    + P75 EVREUX
-****    + P76 NEUBOURG
-****    + P77 BRIENNE LE CHATEAU
-****	+ R503 MOURMELON
-****	+ R505 JOLIVET
-****	+ R513 ALPILLES
-****	+ R3109 B LA FERTE ALAIS
-****	+ ZRT ROUEN E,W
+****	+ AXE VOLTIGE 6383 + 6384
+****	+ ZONE PROTEGEE SOURROQUE-ARIEGE
 
 
-****  	- R68E
-****	- CTA TOULON 2
-****	- CTR NICE 2
-****	- CTR RODEZ 1
-****	- TMA DEAUVILLE
-****	- TMA LORRAINE 1
-****	- TMA LYON 11,13,14,16
-****	- TMA ROUEN
-****	- R288
-****	- ZIT EVREUX
-****	- ZIT BRIENNE LE CHATEAU 
-****	- ZIT NEUBOURG
-****	- ZRT MIRAMAS
-****	- ZRT ALPILLES
+******* Mod R119
+*******	Mod ZSM FRANCE
 
-
-**** 	Mod CTA TOULON
-****	Mod CTR AVIGNON
-**** 	Mod CTR AIX
-****	Mod CTR GRENOBLE
-****	Mod CTR RODEZ
-****	Mod LTA BELLEDONNE
-****    Mod TMA LILLE 14,15
-****    Mod TMA LYON 1->10
-****	Mod TMA LORRAINE 1,2,3
-****    Mod TMA MONTPELLIER 10
-****    Mod TMA NANTES 1->4
-****    Mod TMA PROVENCE 16,17,18.1,18.2,19.1
-****	Mod TMA ORLEANS 7
-****	Mod TMA TOULOUSE 3,4,4.5
-****    Mod RMZ MORLAIX
-****	Mod D253 HARTH NORD
-****	Mod R1F LORIENT
-****    Mod R64 A1,2,3 et C TOULON
-****	Mod R68 A,B,C,D
-****	Mod R102 LA BRACONNE
-****	Mod R108 A F1,2,3
-****    Mod R163 B,C 
-****	Mod R180 LURE A
-****	Mod R217/1.1,1.2,1.3,5 RHONE
-****	Mod R264 ERMENONVILLE
-****    Mod R3200 A,B
-****	Mod LSR80T & 81T
-****	Mod ZSM 
 
 
 *********************************
@@ -20197,6 +20133,27 @@ AH 5906FT AGL
 AL 2000FT AGL
 V X=43:44:29 N 005:45:27 E
 DC 0.5
+
+
+** VOLTIGE LE COURS 6383 **
+AC Q
+AN AEROBATICS LE COURS 122.800
+AH FL075
+AL 2500FT AMSL
+DP 47:45:47 N 002:31:00 W
+DP 47:46:00 N 002:29:51 W
+DP 47:45:34 N 002:32:10 W
+DP 47:45:47 N 002:31:00 W  
+
+** VOLTIGE QUESTEMBERT 6384 **
+AC Q
+AN AEROBATICS QUESTEMBERT 122.800
+AH FL075
+AL 2500FT AMSL
+DP 47:41:05 N 002:28:57 W
+DP 47:41:03 N 002:27:45 W
+DP 47:41:08 N 002:30:09 W
+DP 47:41:05 N 002:28:57 W
 
 
 **************************************
