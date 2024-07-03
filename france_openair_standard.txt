@@ -29,13 +29,7 @@
 
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
 
-
-****	+ AXE VOLTIGE 6383 + 6384
-****	+ ZONE PROTEGEE SOURROQUE-ARIEGE
-
-
-******* Mod R119
-*******	Mod ZSM FRANCE
+******* Mod Poitiers3.1
 
 
 
@@ -7871,6 +7865,8 @@ AH FL115
 AL 4000FT MSL
 DP 46:55:00 N 000:23:59 E
 DP 46:55:00 N 000:51:00 E
+DP 46:55:00 N 000:56:10 E
+DP 46:26:20 N 000:55:10 E
 DP 46:28:47 N 000:28:28 E
 DP 46:18:59 N 000:15:11 E
 V X=46:34:52 N 000:17:53 E
