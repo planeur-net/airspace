@@ -1,4 +1,4 @@
-*version= 93a50d3 2024-07-03T09:36:06+02:00
+*version= ca23c4c 2024-07-04T14:28:08+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -29,11 +29,13 @@
 
 ** (+)Ajout/Add (-)Suppression/Cancel (Mod)Modification
 
-**** + AXE VOLTIGE 6383 + 6384
-**** + ZONE PROTEGEE SOURROQUE-ARIEGE
+
+****	+ AXE VOLTIGE 6383 + 6384
+****	+ ZONE PROTEGEE SOURROQUE-ARIEGE
+
 
 ******* Mod R119
-******* Mod ZSM FRANCE
+*******	Mod ZSM FRANCE
 ******* Mod Poitiers3.1
 
 
