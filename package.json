@@ -2,7 +2,6 @@
   "name": "planeur_airspace",
   "version": "1.0.0",
   "description": "The FFVP and individual contributors are maintaining a file of French airspaces in the OpenAir (Extended) format and OpenAir (Standard).",
-  "main": "index.js",
   "directories": {
     "doc": "doc"
   },
