@@ -1,0 +1,34 @@
+{
+  "name": "planeur_airspace",
+  "version": "1.0.0",
+  "description": "The FFVP and individual contributors are maintaining a file of French airspaces in the OpenAir (Extended) format and OpenAir (Standard).",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "update-packages": "ncu --target minor --upgrade && npm install && npm audit fix",
+    "validate-openair": "node ./src/validate-openair.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/planeur-net/airspace.git"
+  },
+  "keywords": [
+    "french",
+    "airspace",
+    "openair",
+    "gliding"
+  ],
+  "author": "",
+  "license": "See france.txt file",
+  "bugs": {
+    "url": "https://github.com/planeur-net/airspace/issues"
+  },
+  "homepage": "https://github.com/planeur-net/airspace#readme",
+  "devDependencies": {
+    "@openaip/openair-parser": "^1.18.0",
+    "nodemon": "^3.1.4",
+    "npm-check-updates": "^16.14.20"
+  }
+}
