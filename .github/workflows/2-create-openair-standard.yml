@@ -50,6 +50,7 @@ jobs:
         id: validation
         run: |
           echo "## Install openaip-openair-parser"
+          cd ../airspace
           npm install
           echo "## Validating ..."
           node src/validate-openair.js
