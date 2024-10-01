@@ -35,13 +35,6 @@ jobs:
           path: ./OpenAirExtended2OpenAir
           ref: master
 
-      - name: 🚚 Get openaip-openair-parser
-        uses: actions/checkout@v4
-        with:
-          repository: openAIP/openaip-openair-parser
-          path: ./openaip-openair-parser
-          ref: master
-
       - name: Convert to OpenAir standard
         id: convert
         run: |
@@ -57,12 +50,10 @@ jobs:
         id: validation
         run: |
           echo "## Install openaip-openair-parser"
-          cd openaip-openair-parser
           npm install
           echo "## Validating ..."
-          node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ./tmp.geojson
-          rm ./tmp.geojson
-          SCRIPT_OUTPUT=$(node ./cli.js -f ../airspace/france_openair_standard.txt --validate --debug -o ./tmp.geojson)
+          node src/validate-openair.js
+          SCRIPT_OUTPUT=$(node src/validate-openair.js)
           SCRIPT_RC=$?
           echo "parser_output=$SCRIPT_OUTPUT"
           echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
