@@ -35,7 +35,6 @@ jobs:
         echo "## Install openaip-openair-parser"
         git clone https://github.com/openAIP/openaip-openair-parser.git
         cd openaip-openair-parser
-        rm package-lock.json
         npm install
         echo "## Validating ..."
         rm ../france.geojson
