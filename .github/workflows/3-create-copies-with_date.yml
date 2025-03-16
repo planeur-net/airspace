@@ -33,7 +33,7 @@ jobs:
           cd ./airspace
 
           # Define an array with two file names
-          files=("./france.txt" "./france.cub")
+          files=("./france.txt" "./france.cub" "./france_openair_standard.txt")
 
           # Delete old files
           for file in "${files[@]}"; do
