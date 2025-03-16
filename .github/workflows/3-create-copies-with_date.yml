@@ -1,0 +1,102 @@
+# Create OpenAir Standard
+
+name: 3-create-copies-with_date
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  workflow_run:
+    workflows: ["2-create_openair_standard"]
+    types:
+      - completed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# see: https://github.com/marketplace/actions/ftp-deployment
+jobs:
+
+  create-copies-with_date:
+    name: Create copies with date
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v4
+        with:
+          path: ./airspace
+
+      - name: Create copies with date
+        id: create-copies
+        run: |
+          echo "## Create copies with date"
+          cd ./airspace
+
+          # Define an array with two file names
+          files=("./france.txt" "./france.cub")
+
+          # Delete old files
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              # Get the file name without the directory path
+              filename=$(basename "$file")
+            
+              # Delete existing files with the same suffix before the "#" character
+              suffix="${filename%.*}"
+              rm -f ${suffix}#*
+
+            else
+              echo "Delete old files: File not found: $file"
+            fi
+          done
+
+          # Get the current date and time in yyyy_mm_dd_hh format
+          # Extract the first line of the file
+          first_line=$(head -n 1 france.txt)
+          # Retrieve the 3rd string separated by a space
+          date_version=$(echo $first_line | awk '{print $3}')
+          # Replace the ':' character with '-'
+          date_version=$(echo $date_version | sed 's/:/-/g')
+          # Delete everything after, and including the '+' character
+          date_version=$(echo $date_version | sed 's/\+.*//')
+
+          # Loop through all provided files
+          for file in "${files[@]}"; do
+            if [ -f "$file" ]; then
+              # Get the file name without the directory path
+              filename=$(basename "$file")
+              # Create the new file name
+              new_filename="${filename%.*}#$date_version.${filename##*.}"
+              # Copy the file and rename it
+              cp "$file" "$new_filename"
+              echo "Copied and renamed $file to $new_filename"
+            else
+              echo "File not found: $file"
+            fi
+          done
+         
+
+      - name: Get commit Message
+        id: get_commit_message
+        run: |
+          # Save commit message for future push
+          cd ./airspace
+          echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france.txt`" >> $GITHUB_OUTPUT
+
+      - name: ⚙️ Push files to repo
+        id: push_changes
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          repository: ./airspace
+          commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
+          file_pattern: 'france*.*'
+
+  publish-pages:
+    name: Publish pages to github pages
+    runs-on: ubuntu-latest
+    needs: [create-copies-with_date]
+    steps:
+    - name: Trigger event for github pages update
+      uses: peter-evans/repository-dispatch@v2
+      with:
+        event-type: update-pages-event
