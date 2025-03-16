@@ -84,10 +84,17 @@ jobs:
               filename=$(basename "$file")
               suffix="${filename%.*}"
               
+              # README.md file
               # In  all strings containing suffix between, and not including "(" and the next ")", replace the portion between "#" and "." with the date version
               sed -i "s/\($suffix[^()]*#\)[^\.]*/\1$date_version/g" README.md
               # In  all strings containing suffix between, and not including "[" and the next "]", replace the portion between "#" and "." with the date version
               sed -i "s/\($suffix[^][]*#\)[^\.]*/\1$date_version/g" README.md
+
+              #README.en.md file
+              # In  all strings containing suffix between, and not including "(" and the next ")", replace the portion between "#" and "." with the date version
+              sed -i "s/\($suffix[^()]*#\)[^\.]*/\1$date_version/g" README.en.md
+              # In  all strings containing suffix between, and not including "[" and the next "]", replace the portion between "#" and "." with the date version
+              sed -i "s/\($suffix[^][]*#\)[^\.]*/\1$date_version/g" README.en.md
 
             done
             echo "Updated $readme_file with new date version."
@@ -108,7 +115,7 @@ jobs:
         with:
           repository: ./airspace
           commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
-          file_pattern: 'france*.*'
+          file_pattern: 'france*.*, README.*'
 
   publish-pages:
     name: Publish pages to github pages
