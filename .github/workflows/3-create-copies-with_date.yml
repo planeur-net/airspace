@@ -28,6 +28,7 @@ jobs:
 
       - name: Create copies with date and update README.md
         id: create-copies-and-readme
+        run: |
           echo "## Create copies with date"
           cd ./airspace
 
