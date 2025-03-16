@@ -37,7 +37,7 @@ echo "## Create copies with date"
               # Get the file name without the directory path
               filename=$(basename "$file")
               # Create the new file name
-              new_filename="${filename%.*}#$date_version.${filename##*.}"
+              new_filename="${filename%.*}--$date_version.${filename##*.}"
               # Copy the file and rename it
               cp "$file" "$new_filename"
               echo "Copied and renamed $file to $new_filename"
@@ -55,11 +55,11 @@ echo "## Create copies with date"
               filename=$(basename "$file")
               suffix="${filename%.*}"
               
-              # In  all strings containing suffix between, and not including "(" and the next ")", replace the portion between "#" and "." with the date version
-              sed -i "s/\($suffix[^()]*#\)[^\.]*/\1$date_version/g" README.md
-              # In  all strings containing suffix between, and not including "[" and the next "]", replace the portion between "#" and "." with the date version
-              sed -i "s/\($suffix[^][]*#\)[^\.]*/\1$date_version/g" README.md
-              
+             # README.md file
+              # In  all strings containing suffix between, and not including "(" and the next ")", replace the portion between "--" and "." with the date version
+              sed -i "s/\($suffix[^()]*--\)[^\.]*/\1$date_version/g" README.md
+              # In  all strings containing suffix between, and not including "[" and the next "]", replace the portion between "--" and "." with the date version
+              sed -i "s/\($suffix[^][]*--\)[^\.]*/\1$date_version/g" README.md
               
             done
             echo "Updated $readme_file with new date version."
