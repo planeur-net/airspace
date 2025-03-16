@@ -26,9 +26,8 @@ jobs:
         with:
           path: ./airspace
 
-      - name: Create copies with date
-        id: create-copies
-        run: |
+      - name: Create copies with date and update README.md
+        id: create-copies-and-readme
           echo "## Create copies with date"
           cd ./airspace
 
@@ -74,8 +73,27 @@ jobs:
               echo "File not found: $file"
             fi
           done
-         
 
+          # Update the README.md file
+          readme_file="README.md"
+          if [ -f "$readme_file" ]; then
+            for file in "${files[@]}"; do
+              # Print the file name
+              echo "Update Readme.md: Processing $file"
+              filename=$(basename "$file")
+              suffix="${filename%.*}"
+              
+              # In  all strings containing suffix between, and not including "(" and the next ")", replace the portion between "#" and "." with the date version
+              sed -i "s/\($suffix[^()]*#\)[^\.]*/\1$date_version/g" README.md
+              # In  all strings containing suffix between, and not including "[" and the next "]", replace the portion between "#" and "." with the date version
+              sed -i "s/\($suffix[^][]*#\)[^\.]*/\1$date_version/g" README.md
+
+            done
+            echo "Updated $readme_file with new date version."
+          else
+            echo "README.md file not found!"
+          fi
+         
       - name: Get commit Message
         id: get_commit_message
         run: |
