@@ -24,4 +24,4 @@ The airspace file *france.txt* is available in the following Apps or Devices:
 | App / Device | Comment | Updates |
 |--|--|--|
 | XCSoar <br> <img src="./doc/images/xcsoar_logo.png" alt="drawing" style="width:70px; height:70px"/>| Config / System / Site Files / Airspaces / Download / FR-ASP-National-PlaneurNet.txt | Refresh / Update through Config menu [<img src="./doc/images/xcsoar_download_small.jpg">](./doc/images/xcsoar_download.jpg)|
-|LXNav <br> ![LxNav](./doc/images/lxnav_logo_color_300px-150x48.png)| LXNav onboarded Airspace database (LX9070, 9000, 90xx, 80xx, ...) <BR> Setup / Files and Transfer / Airspaces and NOTAMs / Europe | As updated by LXNav [<img src="./doc/images/LX9070_Airspace_files_small.jpg">](./doc/images/LX9070_Airspace_files.png)|
+|LXNav <br> ![LxNav](./doc/images/lxnav_logo_color_300px-150x48.png)| <h6>LXNav onboarded Airspace database (LX9070, 9000, 90xx, 80xx, ...)</h6> Setup / Files and Transfer / Airspaces and NOTAMs / Europe | As updated by LXNav <br>[<img src="./doc/images/LX9070_Airspace_files_small.jpg">](./doc/images/LX9070_Airspace_files.png)|
