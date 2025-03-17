@@ -22,3 +22,11 @@ Le format OpenAir extended n’étant pas encore correctement supporté dans XCs
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) |
 
 Afin de simplifier la mise à jour manuelle, nous fournissons également un fichier contenant la date en suffixe de son nom.
+
+# Integration
+
+Le fichier *france.txt* est disponible nativement dans les applications ou matériels suivants:
+| App / Device | Commentaire | Mises a jour |
+|--|--|--|
+| XCSoar <br> <img src="./doc/images/xcsoar_logo.png" alt="drawing" style="width:70px; height:70px"/>| Config / System / Site Files / Airspaces / Download / FR-ASP-National-PlaneurNet.txt | Rechargement via la config [<img src="./doc/images/xcsoar_download_small.jpg">](./doc/images/xcsoar_download.jpg)|
+|LXNav <br> ![LxNav](./doc/images/lxnav_logo_color_300px-150x48.png)| Base des espaces aeriens LXNav (LX9070, 9000, 90xx, 80xx, ...) <BR> Setup / Files and Transfer / Airspaces and NOTAMs / Europe | Au rythme des mises a jour par LXNav [<img src="./doc/images/LX9070_Airspace_files_small.jpg">](./doc/images/LX9070_Airspace_files.png)|

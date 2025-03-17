@@ -18,3 +18,10 @@ The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/z
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) | 
 
 For your convenience while doing manual updates, we are also providing files with a date suffix in the file name.
+
+# Integration
+The airspace file *france.txt* is available in the following Apps or Devices:
+| App / Device | Comment | Updates |
+|--|--|--|
+| XCSoar <br> <img src="./doc/images/xcsoar_logo.png" alt="drawing" style="width:70px; height:70px"/>| Config / System / Site Files / Airspaces / Download / FR-ASP-National-PlaneurNet.txt | Refresh / Update through Config menu [<img src="./doc/images/xcsoar_download_small.jpg">](./doc/images/xcsoar_download.jpg)|
+|LXNav <br> ![LxNav](./doc/images/lxnav_logo_color_300px-150x48.png)| LXNav onboarded Airspace database (LX9070, 9000, 90xx, 80xx, ...) <BR> Setup / Files and Transfer / Airspaces and NOTAMs / Europe | As updated by LXNav [<img src="./doc/images/LX9070_Airspace_files_small.jpg">](./doc/images/LX9070_Airspace_files.png)|
