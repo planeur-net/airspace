@@ -16,7 +16,7 @@ Le format OpenAir extended n’étant pas encore correctement supporté dans XCs
 # Download
 | Fichier | Format | Gen. Auto. | Download |
 | --- | --- | --- | --- |
-| france.txt | OpenAir | :pencil2: | [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2025-03-11T19-28-45.txt](https://planeur-net.github.io/airspace/france--2025-03-11T19-28-45.txt)|
+| france.txt | OpenAir | :pencil2: <br> :heavy_check_mark: | [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2025-03-11T19-28-45.txt](https://planeur-net.github.io/airspace/france--2025-03-11T19-28-45.txt)|
 | france-openair-standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2025-03-11T19-28-45.txt](https://planeur-net.github.io/airspace/france_openair_standard--2025-03-11T19-28-45.txt)|
 | france.cub | cub | :heavy_check_mark: | [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2025-03-11T19-28-45.cub](https://planeur-net.github.io/airspace/france--2025-03-11T19-28-45.cub) |
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) |
