@@ -61,8 +61,9 @@ jobs:
           date_version=$(echo $date_version | sed 's/\+.*//')
 
           # Delete old files
-          rm -f france--*.*
-          rm -f france_openair_standard--*.*
+          echo "Remove old files..."
+          rm -vf france--*.*
+          rm -vf france_openair_standard--*.*
 
           # Loop through all provided files
           for file in "${files[@]}"; do
