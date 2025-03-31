@@ -12,9 +12,9 @@ The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/z
 # Download
 | File | Format | Auto. Gen. | Download |
 | --- | --- | --- | --- |
-| france.txt | OpenAir | :pencil2: |  [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2025-03-11T19-28-45.txt](https://planeur-net.github.io/airspace/france--2025-03-11T19-28-45.txt)|
-| france_openair_standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2025-03-11T19-28-45.txt](https://planeur-net.github.io/airspace/france_openair_standard--2025-03-11T19-28-45.txt)|
-| france.cub | cub | :heavy_check_mark: |  [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2025-03-11T19-28-45.cub](https://planeur-net.github.io/airspace/france--2025-03-11T19-28-45.cub) |
+| france.txt | OpenAir | :pencil2: |  [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2025-03-31T15-10-52.txt](https://planeur-net.github.io/airspace/france--2025-03-31T15-10-52.txt)|
+| france_openair_standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2025-03-31T15-10-52.txt](https://planeur-net.github.io/airspace/france_openair_standard--2025-03-31T15-10-52.txt)|
+| france.cub | cub | :heavy_check_mark: |  [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2025-03-31T15-10-52.cub](https://planeur-net.github.io/airspace/france--2025-03-31T15-10-52.cub) |
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) | 
 
 For your convenience while doing manual updates, we are also providing files with a date suffix in the file name.
