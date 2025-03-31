@@ -115,7 +115,7 @@ jobs:
         with:
           repository: ./airspace
           commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
-          file_pattern: 'france*.*, README.*'
+          file_pattern: 'france*.* README.*'
 
   publish-pages:
     name: Publish pages to github pages
