@@ -60,6 +60,10 @@ jobs:
           # Delete everything after, and including the '+' character
           date_version=$(echo $date_version | sed 's/\+.*//')
 
+          # Delete old files
+          rm -f france--*.*
+          rm -f france_openair_standard--*.*
+
           # Loop through all provided files
           for file in "${files[@]}"; do
             if [ -f "$file" ]; then
@@ -74,6 +78,7 @@ jobs:
               echo "File not found: $file"
             fi
           done
+
 
           # Update the README.md file
           readme_file="README.md"
