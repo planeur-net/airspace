@@ -29,3 +29,4 @@ Le fichier *france.txt* est disponible nativement dans les applications ou maté
 |--|--|--|
 | XCSoar <br> <img src="./doc/images/xcsoar_logo.png" alt="drawing" style="width:70px; height:70px"/>| Config / System / Site Files / Airspaces / Download / FR-ASP-National-PlaneurNet.txt | Via Config<br> [<img src="./doc/images/xcsoar_download_small.jpg">](./doc/images/xcsoar_download.jpg)|
 |LXNav <br> ![LxNav](./doc/images/lxnav_logo_color_300px-150x48.png)| <h6>Base airspace LXNav (LX9070, 9000, 90xx, 80xx, ...)</h6>  Setup / Files and Transfer / Airspaces and NOTAMs / Europe | Mises a jour par LXNav <br>[<img src="./doc/images/LX9070_Airspace_files_small.jpg">](./doc/images/LX9070_Airspace_files.png)|
+|Naviter <br> ![Naviter](./doc/images/naviter.png)| <h6>Base airspace utilisee pour:<br> SeeYou, SeeYou Mobile, SeeYou Navigator, Oudie N, Omni </h6>| Mises a jour par Naviter <br>[<img src="./doc/images/naviter_products.png">](./doc/images/LX9070_Airspace_files.png)|
