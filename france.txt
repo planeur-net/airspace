@@ -63,7 +63,7 @@
 ****	- CTR RODEZ 1
 ****	- TMA DEAUVILLE
 ****	- TMA LORRAINE 1
-****	- TMA LYON 11,13,14,16
+****	- TMA LYON 13,14,16
 ****	- TMA ROUEN
 ****	- R288
 ****	- ZIT EVREUX
