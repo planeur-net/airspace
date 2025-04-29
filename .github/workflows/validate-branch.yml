@@ -40,10 +40,13 @@ jobs:
         git clone https://github.com/openAIP/openaip-openair-parser.git
         cd openaip-openair-parser
         npm install
+        npm run build
+        echo "## Install openaip-openair-parser: Done !"
+
         echo "## Validating ..."
         rm ../france.geojson
         echo "Run validation script"
-        SCRIPT_OUTPUT=$(node ./cli.js -f ../france.txt --validate --debug -E -o ../france.geojson)
+        SCRIPT_OUTPUT=$(node ./dist/cjs/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT"
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
