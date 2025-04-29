@@ -46,7 +46,7 @@ jobs:
         echo "## Validating ..."
         rm ../france.geojson
         echo "Run validation script"
-        node ./dist/cjs/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0s
+        node ./dist/cjs/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0
         SCRIPT_OUTPUT=$(node ./dist/cjs/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT"
