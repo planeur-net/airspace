@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/planeur-net/airspace#readme",
   "devDependencies": {
-    "@openaip/openair-parser": "^1.18.0",
+    "@openaip/openair-parser": ">=2.9.3",
     "nodemon": "^3.1.4",
     "npm-check-updates": "^16.14.20"
   }
