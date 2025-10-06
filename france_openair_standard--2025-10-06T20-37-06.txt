@@ -1,4 +1,4 @@
-*version= 8094e93 2025-07-10T19:15:58+02:00
+*version= eca0806 2025-10-06T20:37:06+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -22519,7 +22519,7 @@ DC 0.5
 
 ** VOLTIGE LE COURS 6383 **
 AC Q
-AN AEROBATICS LE COURS 122.800
+AN AEROBATICS LE COURS
 AH FL075
 AL 2500FT AMSL
 DP 47:45:47 N 002:31:00 W
@@ -22529,7 +22529,7 @@ DP 47:45:47 N 002:31:00 W
 
 ** VOLTIGE QUESTEMBERT 6384 **
 AC Q
-AN AEROBATICS QUESTEMBERT 122.800
+AN AEROBATICS QUESTEMBERT 
 AH FL075
 AL 2500FT AMSL
 DP 47:41:05 N 002:28:57 W
