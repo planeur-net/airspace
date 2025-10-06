@@ -57,7 +57,6 @@ jobs:
           echo "## Install openaip-openair-parser"
           cd ./airspace
           npm install
-          npm run build
           echo "## Validating ..."
           node src/validate-openair.js
           SCRIPT_OUTPUT=$(node src/validate-openair.js)
