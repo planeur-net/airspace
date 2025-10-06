@@ -52,7 +52,7 @@ jobs:
 
 
       - id: validation
-        name:  Validate france.txt + generate .geojson
+        name:  Validate   france_openair_standard.txt + generate .geojson
         run: |
           echo "## Install openaip-openair-parser"
           git clone https://github.com/openAIP/openaip-openair-parser.git
@@ -62,7 +62,6 @@ jobs:
           echo "## Install openaip-openair-parser: Done !"
 
           echo "## Validating ..."
-          rm ../france.geojson
           echo "Run validation script"
           node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../france_openair_standard.geojson
           SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../france_openair_standard.geojson)
