@@ -33,6 +33,12 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
+    - name: 🧱 Setup Node.js 22.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.x'
+        cache: 'npm'
+
     - id: validation
       name:  Validate france.txt + generate .geojson
       run: |
@@ -46,8 +52,8 @@ jobs:
         echo "## Validating ..."
         rm ../france.geojson
         echo "Run validation script"
-        node ./dist/cjs/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0
-        SCRIPT_OUTPUT=$(node ./dist/cjs/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0)
+        node ./dist/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0
+        SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0)
         SCRIPT_RC=$?
         echo "parser_output=$SCRIPT_OUTPUT"
         echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
