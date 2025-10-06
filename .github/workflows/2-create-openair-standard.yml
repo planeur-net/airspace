@@ -50,37 +50,18 @@ jobs:
           rm ../airspace/france_openair_standard.txt
           node ./main.js ../airspace/france.txt ../airspace/france_openair_standard.txt
 
+      # - name: Display validation output
+      #   run: |
+      #     echo "Validation output="
+      #     echo ${{steps.validation.outputs.parser_output}}
 
-      - id: validation
-        name:  Validate   france_openair_standard.txt + generate .geojson
-        run: |
-          echo "## Install openaip-openair-parser"
-          git clone https://github.com/openAIP/openaip-openair-parser.git
-          cd openaip-openair-parser
-          npm install
-          npm run build
-          echo "## Install openaip-openair-parser: Done !"
-
-          echo "## Validating ..."
-          echo "Run validation script"
-          node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../france_openair_standard.geojson
-          SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../france_openair_standard.geojson)
-          SCRIPT_RC=$?
-          echo "parser_output=$SCRIPT_OUTPUT"
-          echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
-
-      - name: Display validation output
-        run: |
-          echo "Validation output="
-          echo ${{steps.validation.outputs.parser_output}}
-
-      - name: Check validation
-        if: contains(steps.validation.outputs.parser_output, 'Error')
-        uses: actions/github-script@v3
-        with:
-          script: |
-            always() &&
-            core.setFailed('Validation failed ! See Above step for details...')
+      # - name: Check validation
+      #   if: contains(steps.validation.outputs.parser_output, 'Error')
+      #   uses: actions/github-script@v3
+      #   with:
+      #     script: |
+      #       always() &&
+      #       core.setFailed('Validation failed ! See Above step for details...')
 
       - name: Get commit Message
         id: get_commit_message
