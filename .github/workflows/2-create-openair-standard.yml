@@ -35,6 +35,12 @@ jobs:
           path: ./OpenAirExtended2OpenAir
           ref: master
 
+      - name: 🧱 Setup Node.js 22.x
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22.x'
+          cache: 'npm'
+
       - name: Convert to OpenAir standard
         id: convert
         run: |
