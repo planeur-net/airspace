@@ -51,15 +51,21 @@ jobs:
           node ./main.js ../airspace/france.txt ../airspace/france_openair_standard.txt
 
 
-      - name:  Validate france_openair_standard.txt
-        id: validation
+      - id: validation
+        name:  Validate france.txt + generate .geojson
         run: |
           echo "## Install openaip-openair-parser"
-          cd ./airspace
+          git clone https://github.com/openAIP/openaip-openair-parser.git
+          cd openaip-openair-parser
           npm install
+          npm run build
+          echo "## Install openaip-openair-parser: Done !"
+
           echo "## Validating ..."
-          node src/validate-openair.js
-          SCRIPT_OUTPUT=$(node src/validate-openair.js)
+          rm ../france.geojson
+          echo "Run validation script"
+          node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../france_openair_standard.geojson
+          SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../france_openair_standard.geojson)
           SCRIPT_RC=$?
           echo "parser_output=$SCRIPT_OUTPUT"
           echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
