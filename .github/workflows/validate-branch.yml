@@ -33,6 +33,12 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
+    - name: 🧱 Setup Node.js 22.x
+      uses: actions/setup-node@v4
+      with:
+        node-version: '22.x'
+        cache: 'npm'
+
     - id: validation
       name:  Validate france.txt + generate .geojson
       run: |
