@@ -49,19 +49,37 @@ jobs:
           echo "## Converting ..."
           rm ../airspace/france_openair_standard.txt
           node ./main.js ../airspace/france.txt ../airspace/france_openair_standard.txt
+      - id: validation
+        name:  Validate france_openair_standard.txt + generate .geojson
+        run: |
+          echo "## Install openaip-openair-parser"
+          git clone https://github.com/openAIP/openaip-openair-parser.git
+          cd openaip-openair-parser
+          npm install
+          npm run build
+          echo "## Install openaip-openair-parser: Done !"
 
-      # - name: Display validation output
-      #   run: |
-      #     echo "Validation output="
-      #     echo ${{steps.validation.outputs.parser_output}}
+          echo "## Validating ..."
+          rm ../france_openair_standard.geojson
+          echo "Run validation script"
+          node ./dist/cli.js --input-filepath ../airspace/france.txt --validate --output-filepath ../france_openair_standard.geojson --version 1.0
+          SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../airspace/france.txt --validate --output-filepath ../france_openair_standard.geojson --version 1.0)
+          SCRIPT_RC=$?
+          echo "parser_output=$SCRIPT_OUTPUT"
+          echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
 
-      # - name: Check validation
-      #   if: contains(steps.validation.outputs.parser_output, 'Error')
-      #   uses: actions/github-script@v3
-      #   with:
-      #     script: |
-      #       always() &&
-      #       core.setFailed('Validation failed ! See Above step for details...')
+      - name: Display validation output
+        run: |
+          echo "Validation output="
+          echo ${{steps.validation.outputs.parser_output}}
+
+      - name: Check validation
+        if: contains(steps.validation.outputs.parser_output, 'Error')
+        uses: actions/github-script@v3
+        with:
+          script: |
+            always() &&
+            core.setFailed('Validation failed ! See Above step for details...')
 
       - name: Get commit Message
         id: get_commit_message
