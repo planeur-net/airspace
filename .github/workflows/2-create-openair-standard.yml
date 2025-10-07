@@ -64,8 +64,9 @@ jobs:
           node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../airspace/france_openair_standard.geojson --version 1.0
           SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../airspace/france_openair_standard.geojson --version 1.0)
           SCRIPT_RC=$?
-          echo "parser_output=$SCRIPT_OUTPUT"
-          echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
+          echo "parser_output<<EOF" >> $GITHUB_OUTPUT
+          echo "$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
 
       - name: Display validation output
         run: |
