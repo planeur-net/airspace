@@ -71,7 +71,7 @@ jobs:
       - name: Display validation output
         run: |
           echo "Validation output="
-          echo ${{steps.validation.outputs.parser_output}}
+          printf "%s\n" "${{ steps.validation.outputs.parser_output }}"
 
       - name: Check validation
         if: contains(steps.validation.outputs.parser_output, 'Error')
