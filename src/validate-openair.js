@@ -56,8 +56,6 @@ version: '2.0',
     validateGeometry: true,
     // if true, uses "convexHull" to fix an invalid geometry - note that this may change the original airspace geometry!
     fixGeometry: false,
-    // Defines the minimum distance between two points in meters. If two points are closer than this value, they will be merged into one point. Defaults to 0.
-    consumeDuplicateBuffer: 100,
     // Sets the output geometry. Can be either "POLYGON" or "LINESTRING". Defaults to "POLYGON". "LINESTRING" can be used
     // to visualize invalid geometry definitions. Note that "validateGeometry" and "fixGeometry" has NO effect on "LINESTRING" geometry output!
     outputGeometry: 'POLYGON',
