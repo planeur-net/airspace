@@ -81,7 +81,8 @@ jobs:
     - name: Display validation output
       run: |
         echo "Validation output="
-        echo ${{needs.validate-airspace.outputs.validation-output}}
+        # Use printf with quoting so multiline output is treated as a single argument and not executed line-by-line
+        printf '%s\n' "${{ needs.validate-airspace.outputs.validation-output }}"
 
     - name: Check validation
       if: |
