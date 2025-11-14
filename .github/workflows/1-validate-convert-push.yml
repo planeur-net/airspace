@@ -50,9 +50,13 @@ jobs:
         echo "Run validation script"
         node ./dist/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0
         SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../france.txt --validate --output-filepath ../france.geojson --version 2.0)
-        SCRIPT_RC=$?
-        echo "parser_output=$SCRIPT_OUTPUT"
-        echo "parser_output=$SCRIPT_OUTPUT" >> $GITHUB_OUTPUT
+          SCRIPT_RC=$?
+              {
+                echo "parser_output<<EOF"
+                printf '%s\n' "$SCRIPT_OUTPUT"
+                echo "EOF"
+                echo "parser_rc=$SCRIPT_RC"
+              } >> "$GITHUB_OUTPUT"
 
     - name: Get commit Message
       id: get_commit_message
@@ -76,8 +80,9 @@ jobs:
     steps:
     - name: Display validation output
       run: |
-        echo "Validation output="
-        echo ${{needs.validate-airspace.outputs.validation-output}}
+       echo "Validation output="
+        # Use printf with quoting so multiline output is treated as a single argument and not executed line-by-line
+        printf '%s\n' "${{ needs.validate-airspace.outputs.validation-output }}"
 
     - name: Check validation
       if: |
