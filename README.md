@@ -16,9 +16,9 @@ Le format OpenAir extended n’étant pas encore correctement supporté dans XCs
 # Download
 | Fichier | Format | Gen. Auto. | Download |
 | --- | --- | --- | --- |
-| france.txt | OpenAir | :pencil2: <br> :heavy_check_mark: | [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2025-11-22T17-21-21.txt](https://planeur-net.github.io/airspace/france--2025-11-22T17-21-21.txt)|
-| france-openair-standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2025-11-22T17-21-21.txt](https://planeur-net.github.io/airspace/france_openair_standard--2025-11-22T17-21-21.txt)|
-| france.cub | cub | :heavy_check_mark: | [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2025-11-22T17-21-21.cub](https://planeur-net.github.io/airspace/france--2025-11-22T17-21-21.cub) |
+| france.txt | OpenAir | :pencil2: <br> :heavy_check_mark: | [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2026-02-04T20-26-45.txt](https://planeur-net.github.io/airspace/france--2026-02-04T20-26-45.txt)|
+| france-openair-standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2026-02-04T20-26-45.txt](https://planeur-net.github.io/airspace/france_openair_standard--2026-02-04T20-26-45.txt)|
+| france.cub | cub | :heavy_check_mark: | [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2026-02-04T20-26-45.cub](https://planeur-net.github.io/airspace/france--2026-02-04T20-26-45.cub) |
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) |
 
 Afin de simplifier la mise à jour manuelle, nous fournissons également un fichier contenant la date en suffixe de son nom.
