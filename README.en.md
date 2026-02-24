@@ -7,7 +7,7 @@ Initial source of information is the official [AIP](https://www.sia.aviation-civ
 [Documentation format OpenAir + OpenAir Extended - Naviter](https://github.com/naviter/seeyou_file_formats/blob/main/OpenAir_File_Format_Support.md)
 
 ### ZSM
-The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm) are updated on a regular basis from the KML file and the [Kml2OpenAir](https://github.com/llauner/kml2OpenAir) tool.
+The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm) are updated as soon as published, from the KML file using the [Kml2OpenAir](https://github.com/llauner/kml2OpenAir) tool.
 
 # Download
 | File | Format | Auto. Gen. | Download |
