@@ -1,6 +1,6 @@
 # Copy file to planeur.net FTP server
 
-name: 4-Copy-To-Planeut.net
+name: 4-Copy-To-Planeur.net-FTP
 
 # Controls when the workflow will run
 on:
