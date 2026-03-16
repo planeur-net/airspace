@@ -6,7 +6,7 @@ name: 2-create_openair_standard
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
   workflow_run:
-    workflows: ["1-Validate_Add_Version_Convert_Push_to_FTP"]
+    workflows: ["1-Validate_Add_Version_Convert"]
     types:
       - completed
 
@@ -99,16 +99,6 @@ jobs:
           repository: ./airspace
           commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
           file_pattern: 'france_openair_standard.txt'
-
-  publish-pages:
-    name: Pyublish pages to github pages
-    runs-on: ubuntu-latest
-    needs: [convert-openair-standard]
-    steps:
-    - name: Trigger event for github pages update
-      uses: peter-evans/repository-dispatch@v2
-      with:
-        event-type: update-pages-event
 
   push-event-to-other-repo:
     needs: [convert-openair-standard]

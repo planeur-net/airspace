@@ -1,0 +1,46 @@
+# Copy file to planeur.net FTP server
+
+name: 4-Copy-To-Planeut.net
+
+# Controls when the workflow will run
+on:
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  push:
+    branches:
+      - main
+
+  # Triggers the workflow on push or pull request events but only for the "master" branch
+  workflow_run:
+    workflows: ["3-create-copies-with_date"]
+    types:
+      - completed
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+# see: https://github.com/marketplace/actions/ftp-deployment
+jobs:
+  web-deploy:
+    name: 🎉 Upload files to FTP
+    runs-on: ubuntu-latest
+    steps:
+    - name: 🚚 Get latest code
+      uses: actions/checkout@v4
+
+    - name: 📂 Sync files
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ${{ secrets.FTP_SERVER }}
+        username: ${{ secrets.FTP_USERNAME }}
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: "./"
+        server-dir: "./"
+        exclude: |
+          **/.git*
+          **/.git*/**
+          **/bin/**
+          france.cub
+          france.geojson
+          README.md
+        dry-run: false
