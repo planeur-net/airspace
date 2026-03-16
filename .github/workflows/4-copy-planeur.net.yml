@@ -5,11 +5,6 @@ name: 4-Copy-To-Planeur.net-FTP
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "master" branch
-  push:
-    branches:
-      - main
-
-  # Triggers the workflow on push or pull request events but only for the "master" branch
   workflow_run:
     workflows: ["3-create-copies-with_date"]
     types:
