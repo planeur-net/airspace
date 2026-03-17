@@ -8,6 +8,8 @@ Initial source of information is the official [AIP](https://www.sia.aviation-civ
 ### ZSM
 The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm) are updated as soon as published, from the KML file using the [Kml2OpenAir](https://github.com/llauner/kml2OpenAir) tool.
 
+[AIP France](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_19_FEB_2026/FRANCE/AIRAC-2026-02-19/html/index-fr-FR.html): [ENR 5.6 BIRD MIGRATION AND AREAS WITH SENSITIVE FAUNA](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_19_FEB_2026/FRANCE/AIRAC-2026-02-19/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
+
 # Download
 | File | Format | Auto. Gen. | Download |
 | --- | --- | --- | --- |
