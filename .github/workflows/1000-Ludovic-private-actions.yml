@@ -1,0 +1,104 @@
+name: Ludovic Private Actions
+
+# Controls when the workflow will run
+on:
+  repository_dispatch:
+    types: [update-pages-event, airspace-update]
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  LXNAV_CONNECT_POINTS_FOLDER_ID: "1Q8zzZsNvlY2Spo7REuXINsFSW1YHfYxP"
+  LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID: "1csikusLjOikFTZ9nBPiPN9U0NgznByzR"
+
+jobs:
+   copy-to-gdrive:
+    # Copy files to Google Drive
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Clone this repo
+        uses: actions/checkout@v3
+
+      - name: Clone airspace repo
+        uses: actions/checkout@v3
+        with:
+          repository: planeur-net/airspace
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: ./airspace
+          ref: main
+
+      - name: Clone ABBP Vercors repo
+        uses: actions/checkout@v3
+        with:
+          repository: llauner/Appb-Vercors
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: ./appb
+          ref: master
+          
+      # Cupx files
+      - name: Upload to gdrive - cupx
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "*.cupx"
+          folderId: ${{ env.LXNAV_CONNECT_POINTS_FOLDER_ID }}
+          overwrite: "true"
+
+      - name: Upload to gdrive - cup
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "*.cup"
+          folderId: ${{ env.LXNAV_CONNECT_POINTS_FOLDER_ID }}
+          overwrite: "true"
+
+      # Mountain peaks
+      - name: Upload to gdrive - cup
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "*_peaks_*.cup"
+          folderId:  ${{ env.LXNAV_CONNECT_POINTS_FOLDER_ID }}
+          overwrite: "true"
+
+      # Ludo specific waypoint file
+      - name: Upload to gdrive - Misc waypoints
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "./Misc/Ludo_waypoints.cup"
+          folderId:  ${{ env.LXNAV_CONNECT_POINTS_FOLDER_ID }}
+          overwrite: "true"
+
+      # Airspace file
+      - name: Upload to gdrive - Airspace file .txt
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "./airspace/france.*"
+          folderId:  ${{ env.LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID }}
+          overwrite: "true"
+
+      - name: Upload to gdrive - Airspace file .cub
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "./airspace/france-ext.*"
+          folderId:  ${{ env.LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID }}
+          overwrite: "true"
+
+      # APPB Vercors file
+      - name: Upload to gdrive - APPB Vercors airspace file .cub
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "./appb/appb.*"
+          folderId:  ${{ env.LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID }}
+          overwrite: "true"
+      
+
+   
