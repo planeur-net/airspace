@@ -1,0 +1,51 @@
+# Add version to france-exp.txt
+
+name: 2-Add-Version-France-Exp
+
+# Controls when the workflow will run
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'france-exp.txt'
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  add-version:
+    if: ${{ github.ref == 'refs/heads/main' }}
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Clone this repo
+        uses: actions/checkout@v4
+          
+      # Add version information to france-exp.txt
+      - name: Get info, delete 1st line if applicable, add info
+        id: add_version
+        run: |
+          # Get information
+          git log --pretty="%h %cI" -n1 -- france-exp.txt
+          versionInfo=$(git log --pretty="%h %cI" -n1 -- france-exp.txt)
+          # Remove first line if applicable
+          sed -i "$((grep -nm1 *version= ./france-exp.txt || echo 1000000000:) | cut -f 1 -d:) d" ./france-exp.txt
+          # Add version information
+          sed -i "1i *version= $versionInfo" ./france-exp.txt
+
+          git pull
+
+          # Save commit message for future push
+          echo "LAST_COMMIT_MESSSAGE=`git log --format=%s -n 1 -- france-exp.txt`" >> $GITHUB_OUTPUT
+
+          
+      # Push changes to repo    
+      - name: Push changes into repo
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: ${{ steps.add_version.outputs.LAST_COMMIT_MESSSAGE }}
+          file_pattern: 'france-exp.txt'
