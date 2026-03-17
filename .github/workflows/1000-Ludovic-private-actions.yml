@@ -54,11 +54,11 @@ jobs:
           overwrite: "true"
 
       # APPB Vercors file
-      - name: Upload to gdrive - APPB Vercors airspace file .cub
+      - name: Upload to gdrive - APPB Vercors airspace file .cub .txt
         uses: adityak74/google-drive-upload-git-action@main
         with:
           credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
-          filename: "./appb/appb.cub"
+          filename: "./appb/appb.*"
           folderId:  ${{ env.LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID }}
           overwrite: "true"
       
