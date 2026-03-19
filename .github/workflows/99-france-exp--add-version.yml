@@ -1,6 +1,6 @@
 # Add version to france-exp.txt
 
-name: 999-Add-Version-France-Exp
+name: 99-france-exp.txt -- Add-Version
 
 # Controls when the workflow will run
 on:

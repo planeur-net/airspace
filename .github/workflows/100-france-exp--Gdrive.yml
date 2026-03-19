@@ -1,0 +1,38 @@
+name: 100-france-exp.txt -- GDrive
+
+# Controls when the workflow will run
+on:
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+env:
+  LXNAV_CONNECT_POINTS_FOLDER_ID: "1Q8zzZsNvlY2Spo7REuXINsFSW1YHfYxP"
+  LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID: "1csikusLjOikFTZ9nBPiPN9U0NgznByzR"
+
+jobs:
+   copy-to-gdrive:
+    # Copy files to Google Drive
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Clone airspace repo
+        uses: actions/checkout@v3
+        with:
+          repository: planeur-net/airspace
+          token: ${{ secrets.ACCESS_TOKEN }}
+          path: ./airspace
+          ref: main
+
+      # Airspace file
+      - name: Upload to gdrive - france-exp.txt
+        uses: adityak74/google-drive-upload-git-action@main
+        with:
+          credentials: ${{ secrets.GDRIVE_LUDOVIC_LAUNER_CREDENTIALS }}
+          filename: "./airspace/france-exp.txt"
+          folderId:  ${{ env.LXNAV_CONNECT_POINTS_AIRSPACES_FOLDER_ID }}
+          overwrite: "true"
+
+
+   

@@ -1,6 +1,6 @@
 # Validate france.txt on feature change
 
-name: 998-Validate france-exp.txt
+name: 98-france-exp.txt -- Validate
 
 # Controls when the workflow will run
 on:      
