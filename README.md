@@ -8,7 +8,7 @@ Ce fichier est compilé bénévolement à partir des publications [AIP](https://
 ### ZSM
 Les [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm) sont mises à jour au même rythme que leur parution, à partir du fichier KML et de l'outil [Kml2OpenAir](https://github.com/llauner/kml2OpenAir)
 
-[AIP France](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_19_FEB_2026/FRANCE/AIRAC-2026-02-19/html/index-fr-FR.html): [ENR 5.6 Migrations d’oiseaux et zones fréquentées par une faune sensible](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_19_FEB_2026/FRANCE/AIRAC-2026-02-19/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
+[AIP France](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_19_MAR_2026/FRANCE/AIRAC-2026-03-19/html/index-fr-FR.html): [ENR 5.6 Migrations d’oiseaux et zones fréquentées par une faune sensible](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_19_MAR_2026/FRANCE/AIRAC-2026-03-19/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
 
 ### OpenAir Standard / Extended
 Le format OpenAir extended n’étant pas encore correctement supporté dans XCsoar ([#1340](https://github.com/XCSoar/XCSoar/issues/1340), [#1349](https://githubcom/XCSoar/XCSoar/pull/1349)) ou dans SeeYou Navigator, une version OpenAir Standard est générée automatiquement a partir de la version maintenue au format extended
