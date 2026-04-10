@@ -24001,6 +24001,15 @@ AL 5000FT AMSL
 V X=48:45:36 N 002:12:32 E
 DC 1
 
+** LF-R 3112 SATORY **
+AC G
+AY GSEC
+AN LF R 3112 SATORY
+AH FL 100
+AL 1500ft AMSL
+V X=48:47:06 N 002:06:05 E
+DC 1.50
+
 ** LF-R 3200A Tour du Pin (2024/04/18) **
 * autorise selon protocole (ATIS 118.380) / TMA Lyon classe C
 AC G
