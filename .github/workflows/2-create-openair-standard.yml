@@ -100,6 +100,8 @@ jobs:
           commit_message: ${{ steps.get_commit_message.outputs.LAST_COMMIT_MESSSAGE }}
           file_pattern: 'france_openair_standard.txt'
 
+  # Push Event to other repo (planeur-net/outlanding) to trigger 1000-Ludovic Private Actions
+  # This will copy all files to GDrive
   push-event-to-other-repo:
     needs: [convert-openair-standard]
     name: Dispatch to other repo= planeur-net/outlanding
