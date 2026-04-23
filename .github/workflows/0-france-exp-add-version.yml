@@ -1,6 +1,6 @@
 # Add version to france-exp.txt - Generate france.txt from france-exp.txt
 
-name: 0-france-exp.txt -- Add-Version
+name: 0-france-exp.txt -- Add-Version - Create france.txt
 
 # Controls when the workflow will run
 on:
@@ -52,6 +52,6 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: ${{ steps.add_version.outputs.LAST_COMMIT_MESSSAGE }}
-          file_pattern: |
-            france-exp.txt
-            france.txt    
+          file_pattern: 'france.txt france-exp.txt'
+            
+               
