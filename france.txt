@@ -1,4 +1,4 @@
-*version= aaf5444 2026-04-23T06:13:27Z
+*version= 992aa71 2026-04-23T08:13:12+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -346,7 +346,7 @@ DP 45:02:22.01 N 006:24:27.06 E
 DP 45:02:31.52 N 006:24:29.75 E
 DP 45:02:39.58 N 006:25:00.78 E
 
-** ZRT LE LUC  (2025/04/17)
+** ZRT LE LUC   (2026/04/09)
 AC UNC
 AY R
 AN ZRT LE LUC (SUP AIP 055/25) 
@@ -19000,7 +19000,7 @@ DP 46:16:34 N 002:00:00 E
 
 
 ** R 169 LARZAC (2021/12/03)
-** Officier de Tir 05 65 58 48 04 sauf Sam,Dim & JF / FL245 sur NOTAM **
+** Officier de Tir 05 65 58 48 44 / 05 sauf Sam,Dim & JF / FL245 sur NOTAM **
 AC UNC
 AY R
 AN LF-R169 LARZAC
@@ -22654,7 +22654,7 @@ AH FL110
 AL GND
 AF 122.550
 AG MARSEILLE INFO
-V X=44:41:51 N 005:58:51 E
+V X=44:53:14 N 006:42:02 E
 DC 1.13
 
 
