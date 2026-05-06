@@ -11,6 +11,14 @@ on:
     paths:
       - 'france.txt'
 
+  workflow_run:
+    workflows:
+      - '0-france-exp.txt -- Add-Version - Create france.txt'
+    types:
+      - completed
+    branches:
+      - main
+
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -18,6 +26,7 @@ on:
 # see: https://github.com/marketplace/actions/ftp-deployment
 jobs:
   validate-airspace:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     name: Validate OpenAir france.txt
     runs-on: ubuntu-latest
 
@@ -74,6 +83,7 @@ jobs:
 
 
   check-validation:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     name: Check Validation
     runs-on: ubuntu-latest
     needs: [validate-airspace]
@@ -95,7 +105,7 @@ jobs:
 
 
   add-version:
-    if: ${{ github.ref == 'refs/heads/main' }}
+    if: ${{ (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') && github.ref == 'refs/heads/main' }}
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
     needs: [check-validation]
@@ -133,12 +143,10 @@ jobs:
 
 
   convert-to-cub:
+    if: ${{ (github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success') && contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed') }}
     name: Convert france.txt to .cub
     runs-on: ubuntu-latest
     needs: [add-version]
-    if: |
-      always() &&
-      contains(needs.validate-airspace.outputs.validation-output, 'Successfully parsed')
     steps:
     - name: 🚚 Get latest code
       uses: actions/checkout@v4
@@ -164,6 +172,7 @@ jobs:
 
   # Trigger Event so that the 1000-Ludovic Private Actions workflow can copy files to GDrive and do other stuff
   airspace-update:
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     name: Trigger airspace-update event
     runs-on: ubuntu-latest
     needs: [convert-to-cub]
