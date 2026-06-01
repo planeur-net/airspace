@@ -1,4 +1,4 @@
-*version= 9f852b1 2026-05-07T06:56:47Z
+*version= 7bbb6f3 2026-06-01T19:40:28Z
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -31934,10 +31934,11 @@ DP 45:49:29 N 006:43:55 E
 
 
 ** AIGUILLES ROUGES (Reserve naturelle) **
-** Laurent Bernard (2018-02-01) **
+** Fix 1/06/2026 : 300m AGL pour les aéronefs non moto-propulsés **
+** https://www.legifrance.gouv.fr/jorf/id/JORFTEXT000021755667 (Article 19 - 2°)
 AC P
-AN PARC/RESERVE  AIGUILLES ROUGES 1000M/SOL
-AH 1000M AGL
+AN PARC/RESERVE  AIGUILLES ROUGES 300M/SOL
+AH 300M AGL
 AL GND
 DP 45:59:55 N 006:51:09 E
 DP 45:59:39 N 006:51:12 E
