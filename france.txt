@@ -1,4 +1,4 @@
-*version= 2b86c53 2026-06-11T07:05:36Z
+*version= e67e515 2026-06-11T15:27:36+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -38591,14 +38591,14 @@ DP 44:42:44 N 006:10:14 E
 DP 44:42:56 N 006:09:40 E
 
 
-** Vanoise dC)rogation (Parc National) - Vanoise P1 Grand Roc noir **
+** Vanoise dC)rogation (Parc National) - Vanoise P2 Grand Roc noir **
 * AUTORISE DU 15/05 AU 30/10
 *RGE 02.11.2022*
 
 
 AC G
 AY GSEC
-AN PARC/RESERVE VANOISE P1 GRAND ROC NOIR
+AN PARC/RESERVE VANOISE P2 GRAND ROC NOIR
 AL GND
 AH 1000M AGL
 DP 45:19:14 N 006:52:11 E
@@ -38641,14 +38641,14 @@ DP 45:19:22 N 006:52:32 E
 DP 45:19:14 N 006:52:11 E
 
 
-** Vanoise dC)rogation (Parc National) - Vanoise P2 Aussois**
+** Vanoise dC)rogation (Parc National) - Vanoise P1 Aussois**
 * AUTORISE DU 15/05 AU 30/10
 *RGE 02.11.2022*
 
 
 AC G
 AY GSEC
-AN PARC/RESERVE VANOISE P2 AUSSOIS
+AN PARC/RESERVE VANOISE P1 AUSSOIS
 AL GND
 AH 1000M AGL
 DP 45:18:36 N 006:40:22 E
