@@ -1,4 +1,4 @@
-*version= 8a129de 2026-06-11T13:28:34Z
+*version= a304035 2026-06-15T05:32:07Z
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -8649,7 +8649,7 @@ DP 43:33:50 N 005:19:30 E
 DP 43:38:42 N 005:17:48 E
 
 
-** TMA PYRENEES Partie 1 (2025/04/17) **
+** TMA PYRENEES Partie 1 (2026/06/14) **
 AC D
 AN TMA PYRENEES 1
 AH FL115
@@ -8670,7 +8670,7 @@ DP 43:16:23 N 000:25:42 W
 DP 43:17:13 N 000:38:53 W
 DP 43:28:56 N 000:33:02 W
 
-** TMA PYRENEES Partie 2 (2025/04/17) **
+** TMA PYRENEES Partie 2 (2026/06/14) **
 AC D
 AN TMA PYRENEES 2
 AH FL115
@@ -8684,7 +8684,7 @@ DP 43:06:51 N 000:03:20 E
 DP 43:14:51 N 000:12:01 E
 DP 43:15:05 N 000:17:00 E
 
-** TMA PYRENEES Partie 3 (2025/04/17) **
+** TMA PYRENEES Partie 3 (2026/06/14) **
 AC D
 AN TMA PYRENEES 3
 AH FL115
@@ -8709,7 +8709,7 @@ DP 43:17:13 N 000:38:53 W
 DP 43:18:10 N 000:54:00 W
 DP 43:28:16 N 000:54:00 W
 
-** TMA PYRENEES Partie 4 (2025/04/17) **
+** TMA PYRENEES Partie 4 (2026/06/14) **
 AC D
 AN TMA PYRENEES 4
 AH FL115
@@ -8724,7 +8724,7 @@ DP 43:24:44 N 000:23:56 E
 DP 43:35:00 N 000:04:00 E
 DP 43:35:07 N 000:03:58 E
 
-** TMA PYRENEES Partie 5 (2025/04/17) **
+** TMA PYRENEES Partie 5 (2026/06/14) **
 AC D
 AN TMA PYRENEES 5
 AH FL115
@@ -8755,7 +8755,7 @@ DP 43:38:43 N 000:15:19 E
 DP 43:41:06 N 000:22:48 E
 DP 44:00:39 N 000:33:13 E
 
-** TMA PYRENEES Partie 6 (12/11/2015) **
+** TMA PYRENEES Partie 6 (2026/06/14) **
 AC E
 AN TMA PYRENEES 6
 AH FL115
@@ -8767,7 +8767,7 @@ DP 43:03:05 N 000:08:26 E
 DP 43:10:32 N 000:23:56 E
 DP 43:15:05 N 000:33:30 E
 
-** TMA PYRENEES Partie 7 (2025/04/17) **
+** TMA PYRENEES Partie 7 (2026/06/14) **
 ** When R34A non active **
 AC D
 AN TMA PYRENEES 7
@@ -8783,7 +8783,7 @@ DP 43:28:19 N 000:37:20 W
 DP 43:30:59 N 000:40:36 W
 DP 43:35:08 N 000:34:00 W
 
-** TMA PYRENEES Partie 8 (2025/04/17) **
+** TMA PYRENEES Partie 8 (2026/06/14) **
 ** When R34A non active **
 AC D
 AN TMA PYRENEES 8
