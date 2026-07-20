@@ -1,4 +1,4 @@
-*version= ef4c9df 2026-07-04T16:32:12Z
+*version= d6afb6f 2026-07-20T06:53:30Z
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -8992,7 +8992,7 @@ DP 49:18:23 N 005:08:18 E
 
 ** TMA SAINT-YAN partie 1 B (01/05/2016) **
 AC D
-AN TMA SAINT-YAN 1
+AN TMA SAINT-YAN 1 (MO-FR)
 AH FL 085
 AL 2000FT AGL
 DP 47:06:20 N 003:29:53 E
