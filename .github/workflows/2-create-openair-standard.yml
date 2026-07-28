@@ -75,7 +75,7 @@ jobs:
         run: |
           echo "Validation output="
           # Use printf with quoting so multiline output is treated as a single argument and not executed line-by-line
-          printf '%s\n' "${{ needs.validate-airspace.outputs.validation-output }}"
+          printf '%s\n' "${{ steps.validation.outputs.parser_output }}"
 
       - name: Check validation
         if: contains(steps.validation.outputs.parser_output, 'Error')
