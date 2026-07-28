@@ -61,7 +61,6 @@ jobs:
 
           echo "## Validating ..."
           echo "Run validation script"
-          node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../airspace/france_openair_standard.geojson --version 1.0
           SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath ../airspace/france_openair_standard.txt --validate --output-filepath ../airspace/france_openair_standard.geojson --version 1.0)
           SCRIPT_RC=$?
           {

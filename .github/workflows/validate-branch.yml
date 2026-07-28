@@ -82,16 +82,15 @@ jobs:
         echo "## Validating ..."
         rm -f "../${{ steps.changed-file.outputs.geojson_file }}"
         echo "Run validation script"
-        node ./dist/cli.js --input-filepath "../${{ steps.changed-file.outputs.input_file }}" --validate --output-filepath "../${{ steps.changed-file.outputs.geojson_file }}" --version 2.0 --warn-if-expired
         SCRIPT_OUTPUT=$(node ./dist/cli.js --input-filepath "../${{ steps.changed-file.outputs.input_file }}" --validate --output-filepath "../${{ steps.changed-file.outputs.geojson_file }}" --version 2.0 --warn-if-expired)
-          SCRIPT_RC=$?
-          {
-            echo "parser_output<<EOF"
-            printf '%s\n' "$SCRIPT_OUTPUT"
-            echo "EOF"
-            echo "parser_rc=$SCRIPT_RC"
-            echo "validated_file=${{ steps.changed-file.outputs.input_file }}"
-          } >> "$GITHUB_OUTPUT"
+        SCRIPT_RC=$?
+        {
+          echo "parser_output<<EOF"
+          printf '%s\n' "$SCRIPT_OUTPUT"
+          echo "EOF"
+          echo "parser_rc=$SCRIPT_RC"
+          echo "validated_file=${{ steps.changed-file.outputs.input_file }}"
+        } >> "$GITHUB_OUTPUT"
 
     outputs:
       validation-output: ${{ steps.validation.outputs.parser_output }}

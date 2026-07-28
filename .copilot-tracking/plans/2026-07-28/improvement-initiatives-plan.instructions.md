@@ -65,7 +65,7 @@ Implement a phased, low-risk improvement program for workflows, root scripts, an
 
 * [x] Step 1.1: Replace deprecated workflow outputs and fix invalid output references
   * Details: .copilot-tracking/details/2026-07-28/improvement-initiatives-details.md (Lines 57-77)
-* [ ] Step 1.2: Remove duplicate parser invocations and standardize validation capture pattern
+* [x] Step 1.2: Remove duplicate parser invocations and standardize validation capture pattern
   * Details: .copilot-tracking/details/2026-07-28/improvement-initiatives-details.md (Lines 78-99)
 * [ ] Step 1.3: Add concurrency guards for main-branch mutation jobs
   * Details: .copilot-tracking/details/2026-07-28/improvement-initiatives-details.md (Lines 100-120)
