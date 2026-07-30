@@ -1,4 +1,4 @@
-*version= 95b441a 2026-07-29T19:43:39Z
+*version= 98493d7 2026-07-30T22:19:16+02:00
 ********************************************************************************
 *                                                                              *
 *                               AIRSPACE OF FRANCE                             *
@@ -14252,7 +14252,7 @@ DP 47:44:58 N 001:21:31 E
 
 ** R 8 COURBESSAC (17 nov 2011) **
 AC UNC
-AY P
+AY R
 AN LF-R8 COURBESSAC
 AH 1000FT AMSL
 AL GND
