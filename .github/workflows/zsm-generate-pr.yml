@@ -73,5 +73,6 @@ jobs:
             token: ${{ secrets.GITHUB_TOKEN }}
             commit-message: "Add ZSM file for ${{ steps.variables.outputs.date }}"
             title: "Update ZSM ${{ steps.extract-timestamp.outputs.timestamp }}"
+            base: ${{ github.event.repository.default_branch }}
             branch: ${{ steps.variables.outputs.branch_name }}
             delete-branch: true
