@@ -12,6 +12,21 @@
                 "<node_internals>/**"
             ],
             "program": "${workspaceFolder}\\src\\findLines.js"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ZSM: Create OpenAir",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\src\\zsm\\main.js",
+            "args": [
+                "https://geo-prod-sofia-vac.sia-france.fr/geoserver/cloud/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=SIA:zone_zsm&outputFormat=application/json&srsName=EPSG:4326",
+                "${workspaceFolder}/test-json-output.txt"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
         }
     ]
 }
