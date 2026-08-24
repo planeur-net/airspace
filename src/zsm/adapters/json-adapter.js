@@ -8,6 +8,7 @@ const fs = require('fs');
 const { convertCoordinateToDMS } = require('../transformer/coordinate-transformer');
 const { calculateAltitude } = require('../transformer/altitude-transformer');
 const { generateZoneSection } = require('../transformer/openair-builder');
+const { validateAndFixPolygon } = require('../transformer/polygon-validator');
 
 /**
  * Download JSON from URL with required Referer header
@@ -102,14 +103,30 @@ function transformToOpenAir(zones, timeStamp) {
   }
 
   zones.forEach(zone => {
+    // Validate and fix polygon for self-intersections
+    const { isValid, coordinates: fixedCoordinates, issues } = validateAndFixPolygon(
+      zone.coordinates,
+      zone.zoneName
+    );
+
+    // Log validation results
+    if (!isValid) {
+      console.error(`✗ Zone '${zone.zoneName}' FAILED validation - still has issues:`);
+      issues.forEach(issue => console.error(`  - ${issue}`));
+      console.error(`  Input points: ${zone.coordinates.length}, Output points: ${fixedCoordinates.length}`);
+    } else {
+      console.log(`✓ Zone '${zone.zoneName}' passed validation`);
+      issues.forEach(issue => console.log(`  - ${issue}`));
+    }
+
     // Calculate altitude (handles undefined case)
     const { altitudeString } = calculateAltitude(zone.altitudeFeet);
 
-    // Create zone data for OpenAir generation
+    // Create zone data for OpenAir generation with fixed coordinates
     const zoneData = {
       zoneName: zone.zoneName,
       altitudeString,
-      coordinates: zone.coordinates
+      coordinates: fixedCoordinates
     };
 
     // Generate OpenAir section

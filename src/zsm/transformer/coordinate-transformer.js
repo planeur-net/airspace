@@ -10,16 +10,23 @@
  * @returns {string} DMS formatted string (e.g., "048:30:45 N")
  */
 function convertDDToDMS(deg, lng) {
-  const d = parseInt(deg.toString());
-  const minfloat = Math.abs((deg - d) * 60);
-  const m = Math.floor(minfloat);
+  let d = parseInt(deg.toString());
+  let minfloat = Math.abs((deg - d) * 60);
+  let m = Math.floor(minfloat);
   const secfloat = (minfloat - m) * 60;
   let s = Math.round((secfloat + Number.EPSILON) * 100) / 100;
   s = Math.floor(s); // Do not keep decimal places for seconds
 
-  // Handle seconds rollover
-  if (s === 60) {
+  // Handle seconds rollover - increment minutes if seconds reach 60
+  if (s >= 60) {
     s = 0;
+    m += 1;
+  }
+
+  // Handle minutes rollover - increment degrees if minutes reach 60
+  if (m >= 60) {
+    m = 0;
+    d += 1;
   }
 
   // Determine direction
