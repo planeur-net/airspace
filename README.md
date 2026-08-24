@@ -6,7 +6,11 @@ Ce fichier est compilé bénévolement à partir des publications [AIP](https://
 [Documentation format OpenAir + OpenAir Extended - Naviter](https://github.com/naviter/seeyou_file_formats/blob/main/OpenAir_File_Format_Support.md)
 
 ### ZSM
-Les [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm) sont mises à jour au même rythme que leur parution, à partir du fichier KML et de l'outil [Kml2OpenAir](https://github.com/llauner/kml2OpenAir)
+Les [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm).  
+Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’export ZSM par le SIA**</span>, l’information n’est accessible qu’au travers du [visualiseur cartographique](https://www.sia.aviation-civile.gouv.fr/vaip). Cette approche ne permet ni son utilisation en vol, ni son intégration dans des fichiers d’espaces aériens.  
+*Une solution alternative, développée par des contributeurs et sans caractère officiel ni garantie, permet néanmoins de récupérer ces données*. Les mises à jour sont effectuées tous les quinze jours. 
+
+
 
 [AIP France](https://www.sia.aviation-civile.gouv.fr/documents/htmlshow?f=dvd/eAIP_06_AUG_2026/FRANCE/home.html): [ENR 5.6 Migrations d’oiseaux et zones fréquentées par une faune sensible](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_06_AUG_2026/FRANCE/AIRAC-2026-08-06/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
 
