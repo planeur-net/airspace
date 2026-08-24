@@ -6,7 +6,9 @@ on:
         ZSM_URL:
           description: 'URL to the ZSM WFS JSON endpoint'     
           required: true
-          default: 'https://geo-prod-sofia-vac.sia-france.fr/geoserver/cloud/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=SIA:zone_zsm&outputFormat=application/json&srsName=EPSG:4326' 
+          default: 'https://geo-prod-sofia-vac.sia-france.fr/geoserver/cloud/wfs?service=WFS&version=2.0.0&request=GetFeature&typeName=SIA:zone_zsm&outputFormat=application/json&srsName=EPSG:4326'
+    schedule:
+      - cron: '0 0 1,16 * *'  # Runs on the 1st and 16th of each month at 00:00 UTC (approx. every 15 days) 
 
 jobs:
     Download-Convert-ZSM-File:
