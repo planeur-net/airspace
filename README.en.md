@@ -10,7 +10,7 @@ The [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/z
 Since the <span style="color:red">**SIA discontinued publishing ZSM export files**</span>, information is only accessible through the [cartographic visualizer](https://www.sia.aviation-civile.gouv.fr/vaip). This approach does not allow its use in flight or integration into airspace files.  
 *An alternative solution, developed by contributors and without official status or guarantee, nevertheless allows these data to be retrieved*. Updates are performed every fifteen days.
 
-[AIP France](https://www.sia.aviation-civile.gouv.fr/documents/htmlshow?f=dvd/eAIP_06_AUG_2026/FRANCE/home.html): [ENR 5.6 Bird migration areas with sensitive fauna](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_06_AUG_2026/FRANCE/AIRAC-2026-08-06/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
+[AIP France](https://www.sia.aviation-civile.gouv.fr/documents/htmlshow?f=dvd/eAIP_03_SEPT_2026/FRANCE/home.html): [ENR 5.6 Bird migration areas with sensitive fauna](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_03_SEPT_2026/FRANCE/AIRAC-2026-09-03/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
 
 # Download
 | File | Format | Auto. Gen. | Download |
