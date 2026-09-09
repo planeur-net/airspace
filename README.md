@@ -9,6 +9,12 @@ Ce fichier est compilé bénévolement à partir des publications [AIP](https://
 Les [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm).  
 Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’export ZSM par le SIA**</span>, l’information n’est accessible qu’au travers du [visualiseur cartographique](https://www.sia.aviation-civile.gouv.fr/vaip). Cette approche ne permet ni son utilisation en vol, ni son intégration dans des fichiers d’espaces aériens.  
 *Une solution alternative, développée par des contributeurs et sans caractère officiel ni garantie, permet néanmoins de récupérer les données utilisées par le visualiseur*. Les mises à jour sont effectuées tous les quinze jours. 
+| Date | Commentaire|
+| --- | --- |
+| 2026-08-24T11:18:12 | MAJ france-exp.txt (ZSM)|
+| 2026-09-09T13:59:00| Contrôle des nouveautés ZSM sur le SIA|
+
+
 
 
 
