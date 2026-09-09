@@ -62,7 +62,33 @@ jobs:
             TIMESTAMP=$(head -n 1 airspace/${{ steps.variables.outputs.filename }} | sed 's/\* timeStamp= //')
             echo "timestamp=${TIMESTAMP}" >> "$GITHUB_OUTPUT"
 
+        - name: Check for meaningful ZSM changes
+          id: zsm-changes
+          working-directory: airspace
+          shell: bash
+          run: |
+            set -euo pipefail
+
+            meaningful=false
+            for file in france.txt france-exp.txt; do
+              git show "HEAD:${file}" | sed '/^\* timeStamp= /d' > "/tmp/${file}.base"
+              sed '/^\* timeStamp= /d' "${file}" > "/tmp/${file}.current"
+
+              if ! cmp -s "/tmp/${file}.base" "/tmp/${file}.current"; then
+                meaningful=true
+                break
+              fi
+            done
+
+            echo "meaningful=${meaningful}" >> "$GITHUB_OUTPUT"
+            if [ "${meaningful}" = true ]; then
+              echo "ZSM definition changes detected."
+            else
+              echo "No ZSM definition changes detected."
+            fi
+
         - name: Create Pull Request
+          if: steps.zsm-changes.outputs.meaningful == 'true'
           uses: peter-evans/create-pull-request@v6
           with:
             path: ./airspace
