@@ -15,6 +15,8 @@ on:
   pull_request:
     branches:
       - main
+    paths:
+      - 'france-exp.txt'
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 # see: https://github.com/marketplace/actions/ftp-deployment
