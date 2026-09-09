@@ -8,7 +8,7 @@ Ce fichier est compilé bénévolement à partir des publications [AIP](https://
 ### ZSM
 Les [Zones de Sensibilité Majeur](https://www.stac.aviation-civile.gouv.fr/fr/zsm).  
 Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’export ZSM par le SIA**</span>, l’information n’est accessible qu’au travers du [visualiseur cartographique](https://www.sia.aviation-civile.gouv.fr/vaip). Cette approche ne permet ni son utilisation en vol, ni son intégration dans des fichiers d’espaces aériens.  
-*Une solution alternative, développée par des contributeurs et sans caractère officiel ni garantie, permet néanmoins de récupérer ces données*. Les mises à jour sont effectuées tous les quinze jours. 
+*Une solution alternative, développée par des contributeurs et sans caractère officiel ni garantie, permet néanmoins de récupérer les données utilisées par le visualiseur*. Les mises à jour sont effectuées tous les quinze jours. 
 
 
 
