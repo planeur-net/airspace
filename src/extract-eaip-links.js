@@ -119,7 +119,7 @@ function computeEffectiveDateUtc(year, cycle) {
 
 function formatEaipToken(date) {
   const day = String(date.getUTCDate()).padStart(2, '0');
-  const month = date.toLocaleString('en-GB', { month: 'short', timeZone: 'UTC' }).toUpperCase();
+  const month = ['JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL', 'AUG', 'SEP', 'OCT', 'NOV', 'DEC'][date.getUTCMonth()];
   const year = date.getUTCFullYear();
   return `${day}_${month}_${year}`;
 }
