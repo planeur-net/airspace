@@ -12,7 +12,7 @@ Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’e
 | Date | Commentaire|
 | --- | --- |
 | 2026-08-24T11:18:12 | MAJ france-exp.txt (ZSM)|
-| 2026-09-09T12:43:20 | Contrôle des nouveautés ZSM sur le SIA|
+| 2026-09-11T14:34:00 | Contrôle des nouveautés ZSM sur le SIA|
 
 
 
