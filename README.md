@@ -21,7 +21,7 @@ Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’e
 [AIP France](https://www.sia.aviation-civile.gouv.fr/documents/htmlshow?f=dvd/eAIP_03_SEP_2026/FRANCE/home.html): [ENR 5.6 Migrations d’oiseaux et zones fréquentées par une faune sensible](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_03_SEP_2026/FRANCE/AIRAC-2026-09-03/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
 
 ### OpenAir Standard / Extended
-Le format OpenAir extended n’étant pas encore correctement supporté dans XCsoar ([#1340](https://github.com/XCSoar/XCSoar/issues/1340), [#1349](https://githubcom/XCSoar/XCSoar/pull/1349)) ou dans SeeYou Navigator, une version OpenAir Standard est générée automatiquement a partir de la version maintenue au format extended
+Une version OpenAir Standard est générée automatiquement a partir de la version maintenue au format extended.
 
 
 # Download
