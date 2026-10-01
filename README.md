@@ -18,7 +18,7 @@ Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’e
 
 
 
-[AIP France](https://www.sia.aviation-civile.gouv.fr/documents/htmlshow?f=dvd/eAIP_03_SEP_2026/FRANCE/home.html): [ENR 5.6 Migrations d’oiseaux et zones fréquentées par une faune sensible](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_03_SEP_2026/FRANCE/AIRAC-2026-09-03/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
+[AIP France](https://www.sia.aviation-civile.gouv.fr/documents/htmlshow?f=dvd/eAIP_01_OCT_2026/FRANCE/home.html): [ENR 5.6 Migrations d’oiseaux et zones fréquentées par une faune sensible](https://www.sia.aviation-civile.gouv.fr/media/dvd/eAIP_01_OCT_2026/FRANCE/AIRAC-2026-10-01/html/eAIP/FR-ENR-5.6-fr-FR.html#ENR-5.6-1)
 
 ### OpenAir Standard / Extended
 Une version OpenAir Standard est générée automatiquement a partir de la version maintenue au format extended.
