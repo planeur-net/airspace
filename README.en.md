@@ -16,9 +16,9 @@ Since the <span style="color:red">**SIA discontinued publishing ZSM export files
 | File | Format | Auto. Gen. | Download |
 | --- | --- | --- | --- |
 | france-exp.txt | OpenAir | :pencil2: | [https://planeur-net.github.io/airspace/france-exp.txt](https://planeur-net.github.io/airspace/france-exp.txt)<br> Added Activation date / times (experimental)|
-| france.txt | OpenAir | :heavy_check_mark: |  [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2026-08-24T11-22-08Z.txt](https://planeur-net.github.io/airspace/france--2026-08-24T11-22-08Z.txt)|
-| france_openair_standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2026-08-24T11-22-08Z.txt](https://planeur-net.github.io/airspace/france_openair_standard--2026-08-24T11-22-08Z.txt)|
-| france.cub | cub | :heavy_check_mark: |  [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2026-08-24T11-22-08Z.cub](https://planeur-net.github.io/airspace/france--2026-08-24T11-22-08Z.cub) |
+| france.txt | OpenAir | :heavy_check_mark: |  [https://planeur-net.github.io/airspace/france.txt](https://planeur-net.github.io/airspace/france.txt) <br> [france--2026-10-02T12-45-37Z.txt](https://planeur-net.github.io/airspace/france--2026-10-02T12-45-37Z.txt)|
+| france_openair_standard.txt | OpenAir | :heavy_check_mark: | [france_openair_standard.txt](https://planeur-net.github.io/airspace/france_openair_standard.txt) <br> [france_openair_standard--2026-10-02T12-45-37Z.txt](https://planeur-net.github.io/airspace/france_openair_standard--2026-10-02T12-45-37Z.txt)|
+| france.cub | cub | :heavy_check_mark: |  [france.cub](https://planeur-net.github.io/airspace/france.cub) <br> [france--2026-10-02T12-45-37Z.cub](https://planeur-net.github.io/airspace/france--2026-10-02T12-45-37Z.cub) |
 | france.geojson | geojson | :heavy_check_mark: | [france.geojson](https://planeur-net.github.io/airspace/france.geojson) | 
 
 For your convenience while doing manual updates, we are also providing files with a date suffix in the file name.
