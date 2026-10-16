@@ -11,8 +11,8 @@ Depuis l’<span style="color:red">**arrêt de la publication des fichiers d’e
 *Une solution alternative, développée par des contributeurs et sans caractère officiel ni garantie, permet néanmoins de récupérer les données utilisées par le visualiseur*. Les tentatives de mises à jour sont effectuées tous les quinze jours. 
 | Date | Etape | Commentaire |
 | --- | --- | --- |
-| 2026-08-24T11:18:12 | Réelle mise a jour | MAJ france-exp.txt (ZSM)|
-| 2026-10-01T04:53:07 | Contrôle des nouveautés ZSM sur le SIA|
+| 2026-10-16T03:43:52 | MAJ france-exp.txt (ZSM)|
+| 2026-10-16T03:43:52 | Contrôle des nouveautés ZSM sur le SIA|
 
 
 
