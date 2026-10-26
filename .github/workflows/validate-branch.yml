@@ -41,10 +41,11 @@ jobs:
     - name: 🚚 Get latest code
       uses: actions/checkout@v3
 
-    - name: 🧱 Setup Node.js 22.x
+    - name: 🧱 Setup Node.js 24.x
       uses: actions/setup-node@v4
       with:
-        node-version: '22.x'
+        # The latest openaip-openair-parser requires Node.js >=24.15.0.
+        node-version: '24.x'
         cache: 'npm'
 
     - id: changed-file
@@ -117,5 +118,4 @@ jobs:
         script: |
           core.setFailed('Validation failed ! See Above step for details...')
         
-
 
