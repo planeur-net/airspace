@@ -27,6 +27,22 @@
             ],
             "cwd": "${workspaceFolder}",
             "console": "integratedTerminal"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "ZSM: Create OpenAir from file",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "program": "${workspaceFolder}\\src\\zsm\\main.js",
+            "args": [
+                "--file",
+                "${workspaceFolder}\\src\\zsm\\zsm.json",
+                "${workspaceFolder}\\zsm.txt"
+            ],
+            "cwd": "${workspaceFolder}",
+            "console": "integratedTerminal"
         }
     ]
 }

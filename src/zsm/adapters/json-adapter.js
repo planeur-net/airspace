@@ -1,5 +1,5 @@
 /**
- * JSON Adapter - Parses GeoJSON from WFS endpoint to OpenAir format
+ * JSON Adapter - Parses GeoJSON from a WFS endpoint or local file to OpenAir format
  * Handles SIA ZSM GeoJSON data source with required Referer header
  */
 
@@ -138,14 +138,17 @@ function transformToOpenAir(zones, timeStamp) {
 
 /**
  * Main JSON adapter function
- * @param {string} url - WFS endpoint URL
+ * @param {string} source - WFS endpoint URL or local JSON file path
  * @param {string} outputFilename - Output file path
+ * @param {Object} [options] - Input options
+ * @param {boolean} [options.fromFile=false] - Read source as a local UTF-8 file instead of downloading
  * @returns {Promise<void>}
  */
-async function processJSON(url, outputFilename) {
+async function processJSON(source, outputFilename, { fromFile = false } = {}) {
   try {
-    // Download JSON
-    const jsonData = await downloadJSON(url);
+    const jsonData = fromFile
+      ? await fs.promises.readFile(source, 'utf8')
+      : await downloadJSON(source);
 
     // Parse GeoJSON
     const { zones, timeStamp } = parseGeoJSON(jsonData);
@@ -158,10 +161,8 @@ async function processJSON(url, outputFilename) {
     const openairData = transformToOpenAir(zones, timeStamp);
 
     // Write output file
-    fs.writeFile(outputFilename, openairData, (err) => {
-      if (err) throw err;
-      console.log(`OpenAir file saved to: ${outputFilename}`);
-    });
+    await fs.promises.writeFile(outputFilename, openairData);
+    console.log(`OpenAir file saved to: ${outputFilename}`);
   } catch (error) {
     console.error(`JSON processing failed: ${error.message}`);
     throw error;
