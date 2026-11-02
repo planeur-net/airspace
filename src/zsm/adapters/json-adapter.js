@@ -18,7 +18,7 @@ const { validateAndFixPolygon } = require('../transformer/polygon-validator');
 async function downloadJSON(url) {
   const headers = {
     'Referer': 'https://www.sia.aviation-civile.gouv.fr/',
-    'Origin': 'https://www.sia.aviation-civile.gouv.fr/'
+    'Origin': 'https://www.sia.aviation-civile.gouv.fr'
   };
 
   console.log(`Downloading JSON from: ${url}`);
