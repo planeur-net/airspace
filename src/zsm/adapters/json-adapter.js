@@ -21,7 +21,8 @@ async function downloadJSON(url) {
   try {
     const response = await got.default(url, {
       headers: {
-        'Referer': 'https://www.sia.aviation-civile.gouv.fr/'
+        'Referer': 'https://www.sia.aviation-civile.gouv.fr/',
+        'Origin': 'https://www.sia.aviation-civile.gouv.fr/'
       },
       retry: { limit: 3 }
     });
