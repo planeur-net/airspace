@@ -16,14 +16,17 @@ const { validateAndFixPolygon } = require('../transformer/polygon-validator');
  * @returns {Promise<string>} JSON data as string
  */
 async function downloadJSON(url) {
+  const headers = {
+    'Referer': 'https://www.sia.aviation-civile.gouv.fr/',
+    'Origin': 'https://www.sia.aviation-civile.gouv.fr/'
+  };
+
   console.log(`Downloading JSON from: ${url}`);
-  
+  console.log('Request headers:', headers);
+
   try {
     const response = await got.default(url, {
-      headers: {
-        'Referer': 'https://www.sia.aviation-civile.gouv.fr/',
-        'Origin': 'https://www.sia.aviation-civile.gouv.fr/'
-      },
+      headers,
       retry: { limit: 3 }
     });
     
